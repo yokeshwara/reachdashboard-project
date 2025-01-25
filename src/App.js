@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function App() {
@@ -83,14 +83,14 @@ function Dashboard() {
   <div className="campaign-container">
      <div className="campaign-content">
        <h1 className="campaign-content">
-         Hi, <br></br> <div className="username">XXXXXXX <img className="wave" src="/assets/hi-icon.svg"/></div> 
+         Hi, <br></br> <div className="username">XXXXXXX <img className="wave" alt="wave" src="/assets/hi-icon.svg"/></div> 
        </h1>
        <p className="campaign-content1">
          Create a campaign to promote your business more wide <br></br> and reach
          potential markets throughout the world!
        </p>
        <button className="start-campaign-btn">
-         <div className="campaign-text">Start Campaign <img className="arrow" src="/assets/sidearrow-icon.svg"></img></div> 
+         <div className="campaign-text">Start Campaign <img className="arrow" alt="arrow" src="/assets/sidearrow-icon.svg"></img></div> 
        </button>
      </div>
    </div>
@@ -100,12 +100,12 @@ function Dashboard() {
      
      
     
-     <span className="leads-text"> <img className="leads-icon" src="/assets/leads-icon.svg"></img>Leads</span>
+     <span className="leads-text"> <img className="leads-icon" alt='leads-icon' src="/assets/leads-icon.svg"></img>Leads</span>
    </div>
    
    <div className="senders-badge">
    
-     <span className="senders-text">   <img className="senders-icon" src="/assets/senders-icon.svg"></img>Senders</span>
+     <span className="senders-text">   <img className="senders-icon" alt="senders-icon" src="/assets/senders-icon.svg"></img>Senders</span>
    </div>
    <div className="user-card1">
 
@@ -123,7 +123,7 @@ function Dashboard() {
    <span className="user-description">More effective</span>  
    </div>
      <div>
-     <img className="campaign-icon" src="./assets/campaign-icon.svg"/>
+     <img className="campaign-icon" src="./assets/campaign-icon.svg" alt="campaign-icon"/>
      </div>
      </div>
      <div className="user-card2">  
