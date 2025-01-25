@@ -1,0 +1,527 @@
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://db.onlinewebfonts.com/t/54c1d1a09cedd2b7c6e3e470eb000a59.eot");
+  src: url("https://db.onlinewebfonts.com/t/54c1d1a09cedd2b7c6e3e470eb000a59.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/54c1d1a09cedd2b7c6e3e470eb000a59.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/54c1d1a09cedd2b7c6e3e470eb000a59.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/54c1d1a09cedd2b7c6e3e470eb000a59.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/54c1d1a09cedd2b7c6e3e470eb000a59.svg#Inter")format("svg");
+}
+
+.background-image {
+  margin: 0;
+  padding: 0;
+  background-image: url('/public/assets/Dashboard-Banner image 1.png');
+  background-size: cover; /* Makes the image cover the whole page */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  width: 100%;
+  
+}
+
+/* General Navbar Styling */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 20px 20px;
+ 
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #A8A9AE;
+  font-family: Arial, sans-serif;
+}
+
+/* Left Section (Logo) */
+.navbar-logo {
+  width: 97.192px;
+  height: 32.82px;
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+
+/* Center Section (Links) */
+.navbar-links ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  font-size: 15.36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #A8A9AE;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.navbar-item{
+  font-size: 15.36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #A8A9AE;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.icon-home{
+  width: 18.665px;
+  height: 18.77px;
+}
+
+.icon-users{
+  width: 18.486px;
+  height: 19.07px;
+}
+
+.icon-campaign{
+  width: 18.552px;
+  height: 18.427px;
+}
+
+.arrow-icon{
+  width: 7.532px;
+  height: 4.12px;
+
+}
+
+.icon-analytics{
+ width: 14.128px;
+ height: 17.441px;
+}
+
+.icon-settings{
+ width: 15.402px;
+ height: 16.939px;
+}
+.navbar-links li.active {
+  margin-top: -25px;
+  color: #231F20;
+  font-weight: normal;
+  margin-bottom: -29px;
+  border-bottom: 3px solid var(--500-primary, #BF1249);
+}
+
+.navbar-item li.active {
+  margin-top: -25px;
+  color: #231F20;
+  font-weight: normal;
+  margin-bottom: -29px;
+  border-bottom: 3px solid var(--500-primary, #BF1249);
+}
+
+
+/* Right Section (Actions) */
+.navbar-actions {
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.search-icon{
+  width: 15.362px;
+  height: 15.338px;
+}
+
+.notification-icon{
+  width: 15.487px;
+  height: 16.26px;
+}
+
+
+
+
+.navbar-profile .profile-image {
+  width: 33.211px;
+  height: 32.718px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+.campaign-container{
+
+  margin-left: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.top-container {
+  display: flex; /* Keeps the elements side-by-side */
+  justify-content: space-between; /* Ensures spacing between the elements */
+  align-items: flex-start; /* Aligns items at the top */
+  flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+}
+
+
+
+
+.right-container{
+  width: 30%;
+  margin-right: 300px;
+  position: relative;
+
+}
+
+.wave{
+  width: 38.903px;
+  height: 38.55px;
+  margin-left: 40px;
+}
+
+.username{
+  margin-top: -20px;
+}
+
+.campaign-content{
+  margin-top: 90px;
+  color: #231F20;
+  font-family: "Inter";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.campaign-content1{
+margin-top: -16px;
+color: #231F20;
+font-family: "Inter";
+font-size: 18.98px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.start-campaign-btn{
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #A8A9AE;
+}
+
+.arrow{
+  margin-left: 3px;
+}
+
+
+
+
+
+.campaign-text{
+  padding: 10px;
+  color: #231F20;
+
+font-family: "Inter";
+font-size: 16.06px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+
+.leads-icon {
+  width: 18.486px;
+height: 19.08px;
+margin-right: 3px;
+margin-bottom: -3px;
+}
+
+.leads-badge{
+  position: relative;
+  margin-top: 190px;
+}
+
+.leads-text {
+  
+  color: #000;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  padding: 2px 10px 2px 10px;
+  background-color: #FFF;
+  font-family: "Inter";
+  font-size: 20.11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.senders-badge{
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.senders-text{
+
+
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 5px 9px 5px 9px;
+ 
+  color: #000;
+  background-color: #FFF;
+font-family: "Inter";
+font-size: 12.17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.senders-icon{
+  margin-right: 3px;
+  margin-bottom: -5px;
+  width: 13.36px;
+  height: 11.772px;
+}
+
+.user-card1 {  
+  width: 300.015px;
+  height: 166px;
+  margin-top: -140px;
+  margin-left: 150px;
+  display: flex;  
+  align-items: center;  
+  padding: 20px 20px 20px 20px;
+  border-radius: 15px; 
+ 
+  background-color: white;  
+  box-shadow: 3px 4px 7px 3px rgba(0, 0, 0, 0.25);
+}
+
+.user-card {  
+  width: 335.45px;
+height: 30.12px;
+  margin-top: -180px;
+  margin-left: 130px;
+  display: flex;  
+  align-items: center;  
+  padding: 20px 20px 20px 20px;
+  border-radius: 15px; 
+ 
+  background-color: white;  
+  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.25);
+}  
+
+.avatar {  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  width: 28.097px;
+  height: 28.24px;
+  border-radius: 20%;  
+  color: #79C6AC;
+  background-color: #E8F8F3;
+font-family: "Inter";
+font-size: 14.28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}  
+
+.user-info {  
+  display: flex;  
+  margin-left: 10px;  
+  align-items: center;  
+  gap: 90px;
+}  
+
+.user-name {  
+  color: #000;
+
+font-family: "Inter";
+font-size: 12.88px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}  
+
+.campaign-name {  
+  color: #000;
+
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+   
+}  
+
+.status {  
+  margin-left: -40px;
+  background-color: rgba(144, 238, 144, 0.2); /* Light green background */  
+  padding: 4px 8px;  
+  border-radius: 12px;  
+  color: #3d9970; /* Darker text color */  
+  font-weight: bold;  
+  color: #000;
+
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}  
+
+
+.avatar2 {  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  width: 28.097px;
+  height: 28.24px;
+  border-radius: 20%;  
+  color: #79C6AC;
+  background-color: #E8F8F3;
+font-family: "Inter";
+font-size: 14.28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}  
+
+.user-info2 {  
+  display: flex;  
+  margin-left: 10px;  
+  align-items: center;  
+  gap: 90px;
+}  
+
+.user-name2 {  
+  color: #000;
+
+font-family: "Inter";
+font-size: 12.88px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}  
+
+.campaign-name2 {  
+  color: #000;
+
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+   
+}  
+
+
+.user-card2 {  
+  width: 332.75px;
+height: 45.28px;
+  margin-top: 15px;
+  margin-left: 140px;
+  display: flex;  
+  align-items: center;  
+  padding: 15px 15px 15px 15px;
+  border-radius: 15px; 
+ 
+  background-color: white;  
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}  
+
+
+
+.status2 {  
+  margin-left: -50px;
+  background-color: #FAF0DD; /* Light green background */  
+  padding: 4px 8px;  
+  border-radius: 12px;  
+  color: #3d9970; /* Darker text color */  
+  font-weight: bold;  
+  color: #000;
+
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} 
+
+
+.campaign-icon{
+  width: 28.993px;
+height: 29.14px;
+  margin-left:  -90px;
+  margin-top: -50px;
+  border-radius: 30px;
+  padding: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+.dashboardarrow-icon{
+  margin-left: 20px;
+  margin-top: 100px;
+  width: 79.848px;
+height: 100.87px;
+}
+
+
+.user-number{
+  margin-top: -20px;
+  color: #000;
+font-family: "Inter";
+font-size: 44.41px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+.userx{
+  margin-top: -10px;
+  color: #000;
+font-family: "Inter";
+font-size: 34.41px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.user-description{
+  width: 300px;
+   margin-left: -70px;
+   margin-bottom: -50px;
+   color: #000;
+  font-family: "Inter";
+  font-size: 8.91px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.user-card3 {  
+  width: 75.814px;
+  height: 64.15px;
+  margin-top: 300px;
+  margin-left: 50px;
+  display: flex;  
+  align-items: center;  
+  padding: 10px 10px 10px 10px;
+  border-radius: 15px; 
+  background-color: white;  
+  box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.25);
+}  
+
