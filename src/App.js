@@ -1,5 +1,7 @@
 
 import './App.css';
+import ReactECharts from 'echarts-for-react';  
+
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function App() {
 
@@ -73,10 +75,93 @@ function App() {
         <Route path="/preference" element={<Preference />} />
       </Routes>
     </Router>
+
+
+  
+
+    
   );
 }
 
 function Dashboard() {
+
+  const getOption = () => ({  
+    title: {  
+       
+      left: '7%',  
+      top: '1%',  
+      textStyle: {  
+        fontSize: '20px',  
+        fontWeight: 'bold'  
+      }  
+    },  
+    tooltip: {  
+      trigger: 'axis'  
+    },  
+    legend: {  
+      data: ['Campaign 1', 'Inbox'],  
+      top: 'top'  
+    },  
+    xAxis: {  
+      type: 'category',  
+      boundaryGap: false,  
+      data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],  
+      axisLabel: {  
+        color: '#000'  
+      },  
+      axisLine: {  // Hide x-axis line  
+        show: false  
+    },
+    axisTick: {  // Hide the ticks on the x-axis  
+      show: false  
+  } 
+      
+    },  
+    yAxis: {  
+      type: 'value',  
+      axisLabel: {  
+        show: false,  // Hide y-axis labels  
+    }, 
+    },  
+    series: [  
+      {  
+        type: 'line',  
+        data: [1.2, 1.5, 1.3, 1.1, 1.4, 1.5, 1.7, 1.2, 1.3, 1.0, 1.1, 1.0],  
+        smooth: true,  
+        lineStyle: {  
+          color: '#7270F7'  
+        },  
+        symbol: (value, index) => (index === 2 ? 'circle' : undefined), // Only show circle for March (index 2)  
+        symbolSize: 1,  
+        itemStyle: {  
+          normal: {  
+            borderColor: '#3B82F6',  
+            borderWidth: 2,  
+            shadowColor: 'rgba(59,130,246, .5)',  
+            shadowBlur: 10,  
+          }  
+        }  
+      },  
+      {  
+        type: 'line',  
+        data: [1.0, 1.1, 1.0, 1.2, 1.3, 1.5, 1.4, 1.6, 1.3, 1.2, 1.0, 1.1],  
+        smooth: true,  
+        lineStyle: {  
+          color: '#D1D5DB'  
+        },  
+        symbol: (value, index) => (index === 2 ? 'circle' : undefined), // Only show circle for March (index 2)  
+        symbolSize: 1,  
+        itemStyle: {  
+          normal: {  
+            borderColor: '#D1D5DB',  
+            borderWidth: 2,  
+            shadowColor: '#A9AEB1',  
+            shadowBlur: 10,  
+          }  
+        }  
+      }  
+    ]  
+});
 
   return  <div className='background-image'>
    <div className="top-container">
@@ -125,6 +210,9 @@ function Dashboard() {
      <div>
      <img className="campaign-icon" src="./assets/campaign-icon.svg" alt="campaign-icon"/>
      </div>
+     <div>
+     <img className="dashboardarrow-icon" src="./assets/dashboard-arrow.svg" alt="dashboardarrow-icon"/>
+     </div>
      </div>
      <div className="user-card2">  
      <div className="avatar2">AL</div>  
@@ -135,8 +223,71 @@ function Dashboard() {
      </div> 
    </div>
    </div>  
-  </div>;
   </div>
+  <div className='middle-container'>
+  <div className="container">  
+    <div className="chart-container">  
+        <ReactECharts option={getOption()} />  
+    </div>  
+
+    <div className="large-text">  
+        1038  
+    </div>  
+    
+    <div className="small-text">  
+        Email Sent  
+    </div>  
+
+    <div className="footer-text">  
+        inbox  
+    </div>  
+
+    <div className="filter-container">  
+        <span className="filter">Filter:</span>  
+        <div className="filter-button">  
+            Campaign 1  
+        </div>  
+    </div>  
+</div>
+<div className="engagement-container">  
+            <div className="header">  
+                <h2 className='table-title'>Prospect Engagement</h2>  
+                <select>  
+                    <option>Last 7 Days</option>  
+                    <option>Last 30 Days</option>  
+                    <option>Last 3 Months</option>  
+                </select>  
+            </div>  
+            <div className="grid">  
+                <div className="card opened">  
+                    <h3 className='opened'>Opened</h3>  
+                    <p>1.837 <span>(60%)</span></p>  
+                </div>  
+                <div className="card replied">  
+                    <h3>Replied</h3>  
+                    <p>256 <span>(25%)</span></p>  
+                </div>  
+                <div className="card spam">  
+                    <h3>Spam</h3>  
+                    <p>89 <span>(12%)</span></p>  
+                </div>  
+                <div className="card interested">  
+                    <h3>Interested</h3>  
+                    <p>1.837 <span>(60%)</span></p>  
+                </div>  
+                <div className="card not-interested">  
+                    <h3>Not Interested</h3>  
+                    <p>1.837 <span>(60%)</span></p>  
+                </div>  
+                <div className="card started">  
+                    <h3>Started</h3>  
+                    <p>1.837 <span>(60%)</span></p>  
+                </div>  
+            </div>  
+        </div>  
+  </div>
+  </div>
+  
 }
 
 function Audience() {

@@ -17,8 +17,14 @@
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center; /* Centers the image */
   width: 100%;
-  height: 477px;
+  height: 375px;
   
+}
+
+.filter{
+  margin-left: 470px;
+  margin-top: -1px;
+  position: relative;
 }
 
 /* General Navbar Styling */
@@ -179,6 +185,7 @@
   width: 30%;
   margin-right: 300px;
   position: relative;
+  margin-top: -40px;
 
 }
 
@@ -189,7 +196,7 @@
 }
 
 .username{
-  margin-top: -20px;
+  margin-top: -15px;
 }
 
 .campaign-content{
@@ -254,7 +261,7 @@ margin-bottom: -3px;
 .leads-text {
   
   color: #000;
-  border: 2px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
   padding: 2px 10px 2px 10px;
   background-color: #FFF;
@@ -273,7 +280,7 @@ margin-bottom: -3px;
 .senders-text{
 
 
-  border: 2px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   padding: 5px 9px 5px 9px;
  
@@ -304,7 +311,7 @@ line-height: normal;
   border-radius: 15px; 
  
   background-color: white;  
-  box-shadow: 3px 4px 7px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
 .user-card {  
@@ -318,7 +325,7 @@ height: 30.12px;
   border-radius: 15px; 
  
   background-color: white;  
-  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
 }  
 
 .avatar {  
@@ -463,16 +470,16 @@ height: 45.28px;
 .campaign-icon{
   width: 28.993px;
 height: 29.14px;
-  margin-left:  -90px;
+  margin-left:  -50px;
   margin-top: -50px;
   border-radius: 30px;
   padding: 8px;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 
 .dashboardarrow-icon{
-  margin-left: 20px;
+  margin-left: -122px;
   margin-top: 100px;
   width: 79.848px;
 height: 100.87px;
@@ -523,6 +530,3405 @@ line-height: normal;
   padding: 10px 10px 10px 10px;
   border-radius: 15px; 
   background-color: white;  
-  box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
 }  
 
+.middle-container{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.engagement-container {  
+  margin-top: 90px;
+  background-color: #ffffff;  
+  width: 500px;
+  height: 285px;
+  padding: 18px;  
+  border-radius: 12px;
+  border: 0.5px solid var(--Text-Colour-Caption-Text, #71767A);
+
+  margin-left: 90px;
+}  
+
+.table-title{
+  color: #000;
+ font-family: "Inter";
+ font-size: 20px;
+ font-style: normal;
+ font-weight: 600;
+ line-height: normal;
+}
+
+.header {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  margin-bottom: 20px;  
+}  
+
+.header h2 {  
+  font-size: 24px;  
+  margin: 0;  
+}  
+
+.header select {  
+  padding: 5px;  
+  border: 1px solid #ddd;  
+  border-radius: 4px;  
+}  
+
+.grid {  
+  display: grid;  
+  grid-template-columns: repeat(3, 1fr);  
+ 
+}  
+
+.card {  
+  background-color: #FFF;  
+  padding: 10px;  
+  
+  text-align: center;  
+  border: 0.3px solid var(--Text-Colour-Disable-Text, #A9AEB1);  
+  margin: 0; /* Ensures no external margin affecting spacing */  
+  box-sizing: border-box; /* Ensures padding/border are included in the element's total width/height */  
+}
+
+.card h3 {  
+  margin: 0 0 10px 0;  
+  color: #000;
+
+font-family: "Inter";
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}  
+
+.card p {  
+  color: #000;
+
+font-family: "Inter";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}  
+
+.card span {  
+  color: #71767A;  
+  font-size: 14px;  
+}
+
+
+.container {  
+  width: 50%;  
+  height: 20%;  
+  padding: 10px 1px 5px 5px;  
+  margin-top: 80px;  
+  position: relative;  
+ 
+  margin-left: 90px;  
+}  
+
+.chart-container {  
+  width: 94%;  
+  border: 0.5px solid var(--Text-Colour-Caption-Text, #71767A);  
+  border-radius: 10px;  
+  padding: 10px 1px 10px 1px;  
+}  
+
+.large-text {  
+  text-align: left;  
+  font-size: 26px;  
+  margin-top: -280px;  
+  margin-left: 75px;  
+  font-weight: bold;  
+}  
+
+.small-text {  
+  text-align: left;  
+  font-size: 20px;  
+  margin-top: -80px;  
+  margin-left: 75px;  
+  font-weight: bold;  
+}  
+
+.footer-text {  
+  position: absolute;  
+  bottom: -10px;  
+  right: 85px;  
+  font-size: 13px;  
+  font-weight: normal;  
+  color: #71767A;  
+}  
+
+.filter-container {  
+  position: absolute;  
+  bottom: -20px;  
+  right: 145px;  
+  display: inline-flex;  
+  align-items: center;  
+}  
+
+.filter {  
+  margin-right: 5px;  
+}  
+
+.filter-button {  
+  background-color: #7A7A7A;  
+  color: white;  
+  border-radius: 15px;  
+  padding: 5px 10px;  
+}  
+
+/* Media Queries */  
+
+
+@media (min-width: 744px) and (max-width: 779px){
+
+
+  
+  .small-text {  
+    text-align: left;  
+    font-size: 12px;  
+    margin-top: -50px;  
+    margin-left: -45px;  
+    font-weight: bold;  
+  }  
+  
+  .large-text {  
+    text-align: left;  
+    font-size: 20px;  
+    margin-top: -280px;  
+    margin-left: -45px;  
+    font-weight: bold;  
+  }
+  
+  .filter-container{
+    margin-left: -20px;
+  }
+  
+    .chart-container{
+      margin-left: -60px;
+      width: 370px;
+    }
+  
+    .filter{
+    
+      margin-left: 10px;
+    }
+    
+    .engagement-container{
+      margin-left: 42px;
+      width: 370px;
+    }
+  
+    .card{
+      width: 125px;
+  
+      height: 105px;
+    }
+   
+  
+  
+    }
+@media (min-width: 780px) and (max-width: 889px){
+
+
+  
+.small-text {  
+  text-align: left;  
+  font-size: 12px;  
+  margin-top: -50px;  
+  margin-left: -45px;  
+  font-weight: bold;  
+}  
+
+.large-text {  
+  text-align: left;  
+  font-size: 20px;  
+  margin-top: -280px;  
+  margin-left: -45px;  
+  font-weight: bold;  
+}
+
+.filter-container{
+  margin-left: -20px;
+}
+
+  .chart-container{
+    margin-left: -60px;
+  }
+
+  .filter{
+  
+    margin-left: 10px;
+  }
+  
+  .engagement-container{
+    margin-left: -22px;
+    width: 370px;
+  }
+
+  .card{
+    width: 125px;
+
+    height: 105px;
+  }
+ 
+
+
+  }
+
+ 
+
+
+@media (min-width: 890px) and (max-width: 1099px){
+
+  .chart-container{
+    margin-left: -60px;
+  }
+
+  .filter{
+  
+    margin-left: 10px;
+  }
+  
+.header h2{
+   font-size: 20px;
+}
+
+
+    
+.small-text {  
+  text-align: left;  
+  font-size: 12px;  
+  margin-top: -50px;  
+  margin-left: -45px;  
+  font-weight: bold;  
+}  
+
+.large-text {  
+  text-align: left;  
+  font-size: 20px;  
+  margin-top: -280px;  
+  margin-left: -45px;  
+  font-weight: bold;  
+}
+
+
+  
+  
+  .engagement-container{
+    margin-left: -22px;
+    width: 370px;
+  }
+ 
+
+
+  }
+
+
+@media (min-width: 1100px) and (max-width: 1199px){
+
+  .filter{
+  
+    margin-left: 10px;
+  }
+  
+  .engagement-container{
+    margin-left: 12px;
+    width: 370px;
+  }
+  
+  }
+
+
+@media (min-width: 1200px) and (max-width: 1299px){
+
+  .filter{
+  
+    margin-left: 10px;
+  }
+  
+  .engagement-container{
+    margin-left: 12px;
+    width: 400px;
+  }
+  
+  }
+
+@media (min-width: 1300px) and (max-width: 1514px){
+
+.filter{
+
+  margin-left: 10px;
+}
+
+.engagement-container{
+  margin-left: 5px;
+}
+
+}
+
+@media (min-width: 744px) and (max-width: 1049px){
+
+
+.navbar-container{
+  width: 100%;
+}
+
+.navbar-logo{
+  margin-left: 1px;
+}
+
+
+.navbar-actions{
+  margin-left: 10px;
+  padding: 10px 10px 10px 20px;
+}
+
+}
+
+
+@media (min-width: 744px) and (max-width: 790px){
+ 
+  .navbar-links{
+    margin-left: 8px;
+  }
+
+  .navbar-container{
+    width: 110%;
+  }
+
+  .campaign-container{
+    width: 33%;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .top-container {
+    display: flex; /* Keeps the elements side-by-side */
+    justify-content: space-between; /* Ensures spacing between the elements */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+  }
+  
+
+ 
+  
+  
+  .right-container{
+    width: 25%;
+    margin-right: 220px;
+    position: relative;
+  
+  }
+  
+  .wave{
+    width: 38.903px;
+    height: 38.55px;
+    margin-left: 40px;
+  }
+  
+  .username{
+    margin-top: -15px;
+  }
+  
+  .campaign-content{
+    margin-top: 90px;
+    color: #231F20;
+    font-family: "Inter";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .campaign-content1{
+    width: 500px;
+  margin-top: -16px;
+  color: #231F20;
+  font-family: "Inter";
+  font-size: 11.98px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .start-campaign-btn{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #A8A9AE;
+  }
+  
+  .arrow{
+    margin-left: 3px;
+  }
+  
+  
+  
+  
+  
+  .campaign-text{
+    padding: 10px;
+    color: #231F20;
+  
+  font-family: "Inter";
+  font-size: 16.06px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  
+  
+  .leads-icon {
+    width: 18.486px;
+  height: 19.08px;
+  margin-right: 3px;
+  margin-bottom: -3px;
+  }
+  
+  .leads-badge{
+    width: 100px;
+    margin-top: 190px;
+  }
+  
+  .leads-text {
+    margin-top: -20px;
+    color: #000;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 2px 10px 2px 10px;
+    background-color: #FFF;
+    font-family: "Inter";
+    font-size: 20.11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .senders-badge{
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  .senders-text{
+  
+  
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 5px 9px 5px 9px;
+   
+    color: #000;
+    background-color: #FFF;
+  font-family: "Inter";
+  font-size: 12.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .senders-icon{
+    margin-right: 3px;
+    margin-bottom: -5px;
+    width: 13.36px;
+    height: 11.772px;
+  }
+  
+  .user-card1 {  
+    width: 200.015px;
+    height: 166px;
+    margin-top: -140px;
+    margin-left: 150px;
+    display: flex;  
+    align-items: center;  
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+  
+  .user-card {  
+    width: 245.45px;
+  height: 30.12px;
+    margin-top: -170px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }  
+  
+  .avatar {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 50px;
+  }  
+  
+  .user-name {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  .status {  
+    margin-left: -40px;
+    background-color: rgba(144, 238, 144, 0.2); /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }  
+  
+  
+  .avatar2 {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info2 {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 55px;
+  }  
+  
+  .user-name2 {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name2 {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  
+  .user-card2 {  
+    width: 252.75px;
+  height: 45.28px;
+    margin-top: 15px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
+  
+  
+  
+  .status2 {  
+    margin-left: -50px;
+    background-color: #FAF0DD; /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  } 
+  
+  
+  .campaign-icon{
+    width: 28.993px;
+  height: 29.14px;
+    margin-left:  -50px;
+    margin-top: -50px;
+    border-radius: 30px;
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  .dashboardarrow-icon{
+    margin-left: -130px;
+    margin-top: 100px;
+    width: 79.848px;
+  height: 100.87px;
+  }
+  
+  
+  .user-number{
+    margin-top: -20px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 44.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+  }
+  
+  .userx{
+    margin-top: -10px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 34.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .user-description{
+    width: 300px;
+     margin-left: -70px;
+     margin-bottom: -50px;
+     color: #000;
+    font-family: "Inter";
+    font-size: 8.91px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  
+  .user-card3 {  
+    width: 65.814px;
+    height: 64.15px;
+    margin-top: 300px;
+    margin-left: 45px;
+    display: flex;  
+    align-items: center;  
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px; 
+    background-color: white;  
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
+  }
+
+
+  @media (min-width: 791px) and (max-width: 860px){
+ 
+    
+    .navbar-links{
+      margin-left: 10px;
+    }
+
+    
+    .navbar-links li.active {
+      margin-top: -33px;
+      color: #231F20;
+      font-weight: normal;
+      margin-bottom: -39px;
+      border-bottom: 3px solid var(--500-primary, #BF1249);
+    }
+
+    .campaign-container{
+      width: 33%;
+      margin-left: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .top-container {
+      display: flex; /* Keeps the elements side-by-side */
+      justify-content: space-between; /* Ensures spacing between the elements */
+      align-items: flex-start; /* Aligns items at the top */
+      flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+    }
+    
+    
+    
+    
+    .right-container{
+      width: 25%;
+      margin-right: 270px;
+      position: relative;
+    
+    }
+    
+    .wave{
+      width: 38.903px;
+      height: 38.55px;
+      margin-left: 40px;
+    }
+    
+    .username{
+      margin-top: -15px;
+    }
+    
+    .campaign-content{
+      margin-top: 90px;
+      color: #231F20;
+      font-family: "Inter";
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    
+    .campaign-content1{
+      width: 500px;
+    margin-top: -16px;
+    color: #231F20;
+    font-family: "Inter";
+    font-size: 11.98px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+    
+    .start-campaign-btn{
+      margin-top: 20px;
+      border-radius: 10px;
+      border: 2px solid #A8A9AE;
+    }
+    
+    .arrow{
+      margin-left: 3px;
+    }
+    
+    
+    
+    
+    
+    .campaign-text{
+      padding: 10px;
+      color: #231F20;
+    
+    font-family: "Inter";
+    font-size: 16.06px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+    
+    
+    
+    .leads-icon {
+      width: 18.486px;
+    height: 19.08px;
+    margin-right: 3px;
+    margin-bottom: -3px;
+    }
+    
+    .leads-badge{
+      width: 100px;
+      margin-top: 190px;
+    }
+    
+    .leads-text {
+      margin-top: -20px;
+      color: #000;
+      box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+      border-radius: 40px;
+      padding: 2px 10px 2px 10px;
+      background-color: #FFF;
+      font-family: "Inter";
+      font-size: 20.11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    
+    .senders-badge{
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+    
+    .senders-text{
+    
+    
+      box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+      padding: 5px 9px 5px 9px;
+     
+      color: #000;
+      background-color: #FFF;
+    font-family: "Inter";
+    font-size: 12.17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+    
+    .senders-icon{
+      margin-right: 3px;
+      margin-bottom: -5px;
+      width: 13.36px;
+      height: 11.772px;
+    }
+    
+    .user-card1 {  
+      width: 200.015px;
+      height: 166px;
+      margin-top: -140px;
+      margin-left: 150px;
+      display: flex;  
+      align-items: center;  
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px; 
+     
+      background-color: white;  
+      box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+    }
+    
+    .user-card {  
+      width: 245.45px;
+    height: 30.12px;
+      margin-top: -170px;
+      margin-left: 130px;
+      display: flex;  
+      align-items: center;  
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px; 
+     
+      background-color: white;  
+      box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+    }  
+    
+    .avatar {  
+      display: flex;  
+      align-items: center;  
+      justify-content: center;  
+      width: 28.097px;
+      height: 28.24px;
+      border-radius: 20%;  
+      color: #79C6AC;
+      background-color: #E8F8F3;
+    font-family: "Inter";
+    font-size: 14.28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }  
+    
+    .user-info {  
+      display: flex;  
+      margin-left: 10px;  
+      align-items: center;  
+      gap: 50px;
+    }  
+    
+    .user-name {  
+      color: #000;
+    
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }  
+    
+    .campaign-name {  
+      color: #000;
+    
+      font-family: "Inter";
+      font-size: 12.88px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+       
+    }  
+    
+    .status {  
+      margin-left: -40px;
+      background-color: rgba(144, 238, 144, 0.2); /* Light green background */  
+      padding: 4px 8px;  
+      border-radius: 12px;  
+      color: #3d9970; /* Darker text color */  
+      font-weight: bold;  
+      color: #000;
+    
+      font-family: "Inter";
+      font-size: 12.88px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }  
+    
+    
+    .avatar2 {  
+      display: flex;  
+      align-items: center;  
+      justify-content: center;  
+      width: 28.097px;
+      height: 28.24px;
+      border-radius: 20%;  
+      color: #79C6AC;
+      background-color: #E8F8F3;
+    font-family: "Inter";
+    font-size: 14.28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }  
+    
+    .user-info2 {  
+      display: flex;  
+      margin-left: 10px;  
+      align-items: center;  
+      gap: 55px;
+    }  
+    
+    .user-name2 {  
+      color: #000;
+    
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }  
+    
+    .campaign-name2 {  
+      color: #000;
+    
+      font-family: "Inter";
+      font-size: 12.88px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+       
+    }  
+    
+    
+    .user-card2 {  
+      width: 252.75px;
+    height: 45.28px;
+      margin-top: 15px;
+      margin-left: 130px;
+      display: flex;  
+      align-items: center;  
+      padding: 15px 15px 15px 15px;
+      border-radius: 15px; 
+     
+      background-color: white;  
+      box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    }  
+    
+    
+    
+    .status2 {  
+      margin-left: -50px;
+      background-color: #FAF0DD; /* Light green background */  
+      padding: 4px 8px;  
+      border-radius: 12px;  
+      color: #3d9970; /* Darker text color */  
+      font-weight: bold;  
+      color: #000;
+    
+      font-family: "Inter";
+      font-size: 12.88px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    } 
+    
+    
+    .campaign-icon{
+      width: 28.993px;
+    height: 29.14px;
+      margin-left:  -50px;
+      margin-top: -50px;
+      border-radius: 30px;
+      padding: 8px;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+    }
+    
+    
+    .dashboardarrow-icon{
+      margin-left: -130px;
+      margin-top: 100px;
+      width: 79.848px;
+    height: 100.87px;
+    }
+    
+    
+    .user-number{
+      margin-top: -20px;
+      color: #000;
+    font-family: "Inter";
+    font-size: 44.41px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    }
+    
+    .userx{
+      margin-top: -10px;
+      color: #000;
+    font-family: "Inter";
+    font-size: 34.41px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+    
+    .user-description{
+      width: 300px;
+       margin-left: -70px;
+       margin-bottom: -50px;
+       color: #000;
+      font-family: "Inter";
+      font-size: 8.91px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    
+    
+    .user-card3 {  
+      width: 65.814px;
+      height: 64.15px;
+      margin-top: 300px;
+      margin-left: 45px;
+      display: flex;  
+      align-items: center;  
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px; 
+      background-color: white;  
+      box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+    }  
+    }
+
+
+    @media (min-width: 861px) and (max-width: 999px){
+ 
+      .navbar-container{
+        width: 95%;
+      }
+
+      .navbar-actions{
+        margin-right: -20px;
+      }
+
+      .navbar-links li.active {
+        margin-top: -33px;
+        color: #231F20;
+        font-weight: normal;
+        margin-bottom: -39px;
+        border-bottom: 3px solid var(--500-primary, #BF1249);
+      }
+
+      .campaign-container{
+        width: 33%;
+        margin-left: 20px;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .top-container {
+        display: flex; /* Keeps the elements side-by-side */
+        justify-content: space-between; /* Ensures spacing between the elements */
+        align-items: flex-start; /* Aligns items at the top */
+        flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+      }
+      
+      
+      
+      
+      .right-container{
+        width: 25%;
+        margin-left: -160px;
+        position: relative;
+      
+      }
+      
+      .wave{
+        width: 38.903px;
+        height: 38.55px;
+        margin-left: 40px;
+      }
+      
+      .username{
+        margin-top: -15px;
+      }
+      
+      .campaign-content{
+        margin-top: 90px;
+        color: #231F20;
+        font-family: "Inter";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      
+      .campaign-content1{
+        width: 500px;
+      margin-top: -16px;
+      color: #231F20;
+      font-family: "Inter";
+      font-size: 11.98px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      }
+      
+      .start-campaign-btn{
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 2px solid #A8A9AE;
+      }
+      
+      .arrow{
+        margin-left: 3px;
+      }
+      
+      
+      
+      
+      
+      .campaign-text{
+        padding: 10px;
+        color: #231F20;
+      
+      font-family: "Inter";
+      font-size: 16.06px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      }
+      
+      
+      
+      .leads-icon {
+        width: 18.486px;
+      height: 19.08px;
+      margin-right: 3px;
+      margin-bottom: -3px;
+      }
+      
+      .leads-badge{
+        width: 100px;
+        margin-top: 190px;
+      }
+      
+      .leads-text {
+        margin-top: -20px;
+        color: #000;
+        box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 40px;
+        padding: 2px 10px 2px 10px;
+        background-color: #FFF;
+        font-family: "Inter";
+        font-size: 20.11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      
+      .senders-badge{
+        margin-top: 20px;
+        margin-left: 30px;
+      }
+      
+      .senders-text{
+      
+      
+        box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        padding: 5px 9px 5px 9px;
+       
+        color: #000;
+        background-color: #FFF;
+      font-family: "Inter";
+      font-size: 12.17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      }
+      
+      .senders-icon{
+        margin-right: 3px;
+        margin-bottom: -5px;
+        width: 13.36px;
+        height: 11.772px;
+      }
+      
+      .user-card1 {  
+        width: 200.015px;
+        height: 166px;
+        margin-top: -140px;
+        margin-left: 150px;
+        display: flex;  
+        align-items: center;  
+        padding: 10px 10px 10px 10px;
+        border-radius: 15px; 
+       
+        background-color: white;  
+        box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+      }
+      
+      .user-card {  
+        width: 245.45px;
+      height: 30.12px;
+        margin-top: -170px;
+        margin-left: 130px;
+        display: flex;  
+        align-items: center;  
+        padding: 10px 10px 10px 10px;
+        border-radius: 15px; 
+       
+        background-color: white;  
+        box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+      }  
+      
+      .avatar {  
+        display: flex;  
+        align-items: center;  
+        justify-content: center;  
+        width: 28.097px;
+        height: 28.24px;
+        border-radius: 20%;  
+        color: #79C6AC;
+        background-color: #E8F8F3;
+      font-family: "Inter";
+      font-size: 14.28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      }  
+      
+      .user-info {  
+        display: flex;  
+        margin-left: 10px;  
+        align-items: center;  
+        gap: 50px;
+      }  
+      
+      .user-name {  
+        color: #000;
+      
+      font-family: "Inter";
+      font-size: 12.88px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      }  
+      
+      .campaign-name {  
+        color: #000;
+      
+        font-family: "Inter";
+        font-size: 12.88px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+         
+      }  
+      
+      .status {  
+        margin-left: -40px;
+        background-color: rgba(144, 238, 144, 0.2); /* Light green background */  
+        padding: 4px 8px;  
+        border-radius: 12px;  
+        color: #3d9970; /* Darker text color */  
+        font-weight: bold;  
+        color: #000;
+      
+        font-family: "Inter";
+        font-size: 12.88px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }  
+      
+      
+      .avatar2 {  
+        display: flex;  
+        align-items: center;  
+        justify-content: center;  
+        width: 28.097px;
+        height: 28.24px;
+        border-radius: 20%;  
+        color: #79C6AC;
+        background-color: #E8F8F3;
+      font-family: "Inter";
+      font-size: 14.28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      }  
+      
+      .user-info2 {  
+        display: flex;  
+        margin-left: 10px;  
+        align-items: center;  
+        gap: 55px;
+      }  
+      
+      .user-name2 {  
+        color: #000;
+      
+      font-family: "Inter";
+      font-size: 12.88px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      }  
+      
+      .campaign-name2 {  
+        color: #000;
+      
+        font-family: "Inter";
+        font-size: 12.88px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+         
+      }  
+      
+      
+      .user-card2 {  
+        width: 252.75px;
+      height: 45.28px;
+        margin-top: 15px;
+        margin-left: 130px;
+        display: flex;  
+        align-items: center;  
+        padding: 15px 15px 15px 15px;
+        border-radius: 15px; 
+       
+        background-color: white;  
+        box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+      }  
+      
+      
+      
+      .status2 {  
+        margin-left: -50px;
+        background-color: #FAF0DD; /* Light green background */  
+        padding: 4px 8px;  
+        border-radius: 12px;  
+        color: #3d9970; /* Darker text color */  
+        font-weight: bold;  
+        color: #000;
+      
+        font-family: "Inter";
+        font-size: 12.88px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      } 
+      
+      
+      .campaign-icon{
+        width: 28.993px;
+      height: 29.14px;
+        margin-left:  -50px;
+        margin-top: -50px;
+        border-radius: 30px;
+        padding: 8px;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+      }
+      
+      
+      .dashboardarrow-icon{
+        margin-left: -130px;
+        margin-top: 100px;
+        width: 79.848px;
+      height: 100.87px;
+      }
+      
+      
+      .user-number{
+        margin-top: -20px;
+        color: #000;
+      font-family: "Inter";
+      font-size: 44.41px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      
+      }
+      
+      .userx{
+        margin-top: -10px;
+        color: #000;
+      font-family: "Inter";
+      font-size: 34.41px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      }
+      
+      .user-description{
+        width: 300px;
+         margin-left: -70px;
+         margin-bottom: -50px;
+         color: #000;
+        font-family: "Inter";
+        font-size: 8.91px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      
+      
+      .user-card3 {  
+        width: 65.814px;
+        height: 64.15px;
+        margin-top: 300px;
+        margin-left: 45px;
+        display: flex;  
+        align-items: center;  
+        padding: 10px 10px 10px 10px;
+        border-radius: 15px; 
+        background-color: white;  
+        box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+      }  
+      }
+    
+  
+
+@media (min-width: 1000px) and (max-width: 1099px){
+ 
+ .navbar-container{
+    width: 97%;
+ }
+
+ .navbar-actions{
+  margin-right: 10px;
+ }
+ 
+
+ .navbar-links li.active {
+  margin-top: -30px;
+  color: #231F20;
+  font-weight: normal;
+  margin-bottom: -39px;
+  border-bottom: 3px solid var(--500-primary, #BF1249);
+}
+
+  .campaign-container{
+    width: 43%;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .top-container {
+    display: flex; /* Keeps the elements side-by-side */
+    justify-content: space-between; /* Ensures spacing between the elements */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+  }
+  
+  
+  
+  
+  .right-container{
+    width: 40%;
+    margin-left: -110px;
+    position: relative;
+    
+  }
+  
+  .wave{
+    width: 38.903px;
+    height: 38.55px;
+    margin-left: 40px;
+  }
+  
+  .username{
+    margin-top: -15px;
+  }
+  
+  .campaign-content{
+    margin-top: 90px;
+    color: #231F20;
+    font-family: "Inter";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .campaign-content1{
+    width: 500px;
+  margin-top: -16px;
+  color: #231F20;
+  font-family: "Inter";
+  font-size: 11.98px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .start-campaign-btn{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #A8A9AE;
+  }
+  
+  .arrow{
+    margin-left: 3px;
+  }
+  
+  
+  
+  
+  
+  .campaign-text{
+    padding: 10px;
+    color: #231F20;
+  
+  font-family: "Inter";
+  font-size: 16.06px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  
+  
+  .leads-icon {
+    width: 18.486px;
+  height: 19.08px;
+  margin-right: 3px;
+  margin-bottom: -3px;
+  }
+  
+  .leads-badge{
+    position: relative;
+    margin-top: 190px;
+  }
+  
+  .leads-text {
+    
+    color: #000;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 2px 10px 2px 10px;
+    background-color: #FFF;
+    font-family: "Inter";
+    font-size: 20.11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .senders-badge{
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  .senders-text{
+  
+  
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 5px 9px 5px 9px;
+   
+    color: #000;
+    background-color: #FFF;
+  font-family: "Inter";
+  font-size: 12.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .senders-icon{
+    margin-right: 3px;
+    margin-bottom: -5px;
+    width: 13.36px;
+    height: 11.772px;
+  }
+  
+  .user-card1 {  
+    width: 300.015px;
+    height: 166px;
+    margin-top: -140px;
+    margin-left: 150px;
+    display: flex;  
+    align-items: center;  
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+  
+  .user-card {  
+    width: 335.45px;
+  height: 30.12px;
+    margin-top: -180px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }  
+  
+  .avatar {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 90px;
+  }  
+  
+  .user-name {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  .status {  
+    margin-left: -40px;
+    background-color: rgba(144, 238, 144, 0.2); /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }  
+  
+  
+  .avatar2 {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info2 {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 90px;
+  }  
+  
+  .user-name2 {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name2 {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  
+  .user-card2 {  
+    width: 332.75px;
+  height: 45.28px;
+    margin-top: 15px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
+  
+  
+  
+  .status2 {  
+    margin-left: -50px;
+    background-color: #FAF0DD; /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  } 
+  
+  
+  .campaign-icon{
+    width: 28.993px;
+  height: 29.14px;
+    margin-left:  -50px;
+    margin-top: -50px;
+    border-radius: 30px;
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  .dashboardarrow-icon{
+    margin-left: -122px;
+    margin-top: 100px;
+    width: 79.848px;
+  height: 100.87px;
+  }
+  
+  
+  .user-number{
+    margin-top: -20px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 44.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+  }
+  
+  .userx{
+    margin-top: -10px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 34.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .user-description{
+    width: 300px;
+     margin-left: -70px;
+     margin-bottom: -50px;
+     color: #000;
+    font-family: "Inter";
+    font-size: 8.91px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  
+  .user-card3 {  
+    width: 75.814px;
+    height: 64.15px;
+    margin-top: 300px;
+    margin-left: 50px;
+    display: flex;  
+    align-items: center;  
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px; 
+    background-color: white;  
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
+  }
+
+@media (min-width: 1100px) and (max-width: 1139px){
+ 
+  
+
+  .campaign-container{
+    width: 50%;
+    margin-left: 100px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .top-container {
+    display: flex; /* Keeps the elements side-by-side */
+    justify-content: space-between; /* Ensures spacing between the elements */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+  }
+  
+  
+  
+  
+  .right-container{
+    width: 50%;
+    margin-left: -150px;
+    position: relative;
+  
+  }
+  
+  .wave{
+    width: 38.903px;
+    height: 38.55px;
+    margin-left: 40px;
+  }
+  
+  .username{
+    margin-top: -15px;
+  }
+  
+  .campaign-content{
+    margin-top: 90px;
+    color: #231F20;
+    font-family: "Inter";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .campaign-content1{
+    width: 500px;
+  margin-top: -16px;
+  color: #231F20;
+  font-family: "Inter";
+  font-size: 12.98px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .start-campaign-btn{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #A8A9AE;
+  }
+  
+  .arrow{
+    margin-left: 3px;
+  }
+  
+  
+  
+  
+  
+  .campaign-text{
+    padding: 10px;
+    color: #231F20;
+  
+  font-family: "Inter";
+  font-size: 16.06px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  
+  
+  .leads-icon {
+    width: 18.486px;
+  height: 19.08px;
+  margin-right: 3px;
+  margin-bottom: -3px;
+  }
+  
+  .leads-badge{
+    position: relative;
+    margin-top: 190px;
+  }
+  
+  .leads-text {
+    
+    color: #000;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 2px 10px 2px 10px;
+    background-color: #FFF;
+    font-family: "Inter";
+    font-size: 20.11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .senders-badge{
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  .senders-text{
+  
+  
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 5px 9px 5px 9px;
+   
+    color: #000;
+    background-color: #FFF;
+  font-family: "Inter";
+  font-size: 12.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .senders-icon{
+    margin-right: 3px;
+    margin-bottom: -5px;
+    width: 13.36px;
+    height: 11.772px;
+  }
+  
+  .user-card1 {  
+    width: 300.015px;
+    height: 166px;
+    margin-top: -140px;
+    margin-left: 150px;
+    display: flex;  
+    align-items: center;  
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+  
+  .user-card {  
+    width: 335.45px;
+  height: 30.12px;
+    margin-top: -180px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }  
+  
+  .avatar {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 90px;
+  }  
+  
+  .user-name {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  .status {  
+    margin-left: -40px;
+    background-color: rgba(144, 238, 144, 0.2); /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }  
+  
+  
+  .avatar2 {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info2 {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 90px;
+  }  
+  
+  .user-name2 {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name2 {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  
+  .user-card2 {  
+    width: 332.75px;
+  height: 45.28px;
+    margin-top: 15px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
+  
+  
+  
+  .status2 {  
+    margin-left: -50px;
+    background-color: #FAF0DD; /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  } 
+  
+  
+  .campaign-icon{
+    width: 28.993px;
+  height: 29.14px;
+    margin-left:  -50px;
+    margin-top: -50px;
+    border-radius: 30px;
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  .dashboardarrow-icon{
+    margin-left: -122px;
+    margin-top: 100px;
+    width: 79.848px;
+  height: 100.87px;
+  }
+  
+  
+  .user-number{
+    margin-top: -20px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 44.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+  }
+  
+  .userx{
+    margin-top: -10px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 34.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .user-description{
+    width: 300px;
+     margin-left: -70px;
+     margin-bottom: -50px;
+     color: #000;
+    font-family: "Inter";
+    font-size: 8.91px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  
+  .user-card3 {  
+    width: 75.814px;
+    height: 64.15px;
+    margin-top: 300px;
+    margin-left: 50px;
+    display: flex;  
+    align-items: center;  
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px; 
+    background-color: white;  
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
+  }
+
+@media (min-width: 1140px) and (max-width: 1179px){
+ 
+  
+
+  .campaign-container{
+    width: 50%;
+    margin-left: 100px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .top-container {
+    display: flex; /* Keeps the elements side-by-side */
+    justify-content: space-between; /* Ensures spacing between the elements */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+  }
+  
+  
+  
+  
+  .right-container{
+    width: 50%;
+    margin-left: -150px;
+    position: relative;
+  
+  }
+  
+  .wave{
+    width: 38.903px;
+    height: 38.55px;
+    margin-left: 40px;
+  }
+  
+  .username{
+    margin-top: -15px;
+  }
+  
+  .campaign-content{
+    margin-top: 90px;
+    color: #231F20;
+    font-family: "Inter";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .campaign-content1{
+    width: 500px;
+  margin-top: -16px;
+  color: #231F20;
+  font-family: "Inter";
+  font-size: 12.98px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .start-campaign-btn{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #A8A9AE;
+  }
+  
+  .arrow{
+    margin-left: 3px;
+  }
+  
+  
+  
+  
+  
+  .campaign-text{
+    padding: 10px;
+    color: #231F20;
+  
+  font-family: "Inter";
+  font-size: 16.06px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  
+  
+  .leads-icon {
+    width: 18.486px;
+  height: 19.08px;
+  margin-right: 3px;
+  margin-bottom: -3px;
+  }
+  
+  .leads-badge{
+    position: relative;
+    margin-top: 190px;
+  }
+  
+  .leads-text {
+    
+    color: #000;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 2px 10px 2px 10px;
+    background-color: #FFF;
+    font-family: "Inter";
+    font-size: 20.11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .senders-badge{
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  .senders-text{
+  
+  
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 5px 9px 5px 9px;
+   
+    color: #000;
+    background-color: #FFF;
+  font-family: "Inter";
+  font-size: 12.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .senders-icon{
+    margin-right: 3px;
+    margin-bottom: -5px;
+    width: 13.36px;
+    height: 11.772px;
+  }
+  
+  .user-card1 {  
+    width: 300.015px;
+    height: 166px;
+    margin-top: -140px;
+    margin-left: 150px;
+    display: flex;  
+    align-items: center;  
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+  
+  .user-card {  
+    width: 335.45px;
+  height: 30.12px;
+    margin-top: -180px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }  
+  
+  .avatar {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 90px;
+  }  
+  
+  .user-name {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  .status {  
+    margin-left: -40px;
+    background-color: rgba(144, 238, 144, 0.2); /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }  
+  
+  
+  .avatar2 {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info2 {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 90px;
+  }  
+  
+  .user-name2 {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name2 {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  
+  .user-card2 {  
+    width: 332.75px;
+  height: 45.28px;
+    margin-top: 15px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
+  
+  
+  
+  .status2 {  
+    margin-left: -50px;
+    background-color: #FAF0DD; /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  } 
+  
+  
+  .campaign-icon{
+    width: 28.993px;
+  height: 29.14px;
+    margin-left:  -50px;
+    margin-top: -50px;
+    border-radius: 30px;
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  .dashboardarrow-icon{
+    margin-left: -122px;
+    margin-top: 100px;
+    width: 79.848px;
+  height: 100.87px;
+  }
+  
+  
+  .user-number{
+    margin-top: -20px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 44.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+  }
+  
+  .userx{
+    margin-top: -10px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 34.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .user-description{
+    width: 300px;
+     margin-left: -70px;
+     margin-bottom: -50px;
+     color: #000;
+    font-family: "Inter";
+    font-size: 8.91px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  
+  .user-card3 {  
+    width: 75.814px;
+    height: 64.15px;
+    margin-top: 300px;
+    margin-left: 50px;
+    display: flex;  
+    align-items: center;  
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px; 
+    background-color: white;  
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
+  }
+@media (min-width: 1180px) and (max-width: 1259px){
+ 
+
+
+  .campaign-container{
+  
+    margin-left: 100px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .top-container {
+    display: flex; /* Keeps the elements side-by-side */
+    justify-content: space-between; /* Ensures spacing between the elements */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+  }
+  
+  
+  
+  
+  .right-container{
+    width: 30%;
+    margin-right: 330px;
+    position: relative;
+  
+  }
+  
+  .wave{
+    width: 38.903px;
+    height: 38.55px;
+    margin-left: 40px;
+  }
+  
+  .username{
+    margin-top: -15px;
+  }
+  
+  .campaign-content{
+    margin-top: 90px;
+    color: #231F20;
+    font-family: "Inter";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .campaign-content1{
+  margin-top: -16px;
+  color: #231F20;
+  font-family: "Inter";
+  font-size: 14.98px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .start-campaign-btn{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #A8A9AE;
+  }
+  
+  .arrow{
+    margin-left: 3px;
+  }
+  
+  
+  
+  
+  
+  .campaign-text{
+    padding: 10px;
+    color: #231F20;
+  
+  font-family: "Inter";
+  font-size: 16.06px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  
+  
+  .leads-icon {
+    width: 18.486px;
+  height: 19.08px;
+  margin-right: 3px;
+  margin-bottom: -3px;
+  }
+  
+  .leads-badge{
+    position: relative;
+    margin-top: 190px;
+  }
+  
+  .leads-text {
+    
+    color: #000;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 2px 10px 2px 10px;
+    background-color: #FFF;
+    font-family: "Inter";
+    font-size: 20.11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .senders-badge{
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  .senders-text{
+  
+  
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 5px 9px 5px 9px;
+   
+    color: #000;
+    background-color: #FFF;
+  font-family: "Inter";
+  font-size: 12.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .senders-icon{
+    margin-right: 3px;
+    margin-bottom: -5px;
+    width: 13.36px;
+    height: 11.772px;
+  }
+  
+  .user-card1 {  
+    width: 300.015px;
+    height: 166px;
+    margin-top: -140px;
+    margin-left: 150px;
+    display: flex;  
+    align-items: center;  
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+  
+  .user-card {  
+    width: 335.45px;
+  height: 30.12px;
+    margin-top: -180px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }  
+  
+  .avatar {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 90px;
+  }  
+  
+  .user-name {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  .status {  
+    margin-left: -40px;
+    background-color: rgba(144, 238, 144, 0.2); /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }  
+  
+  
+  .avatar2 {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info2 {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 90px;
+  }  
+  
+  .user-name2 {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name2 {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  
+  .user-card2 {  
+    width: 332.75px;
+  height: 45.28px;
+    margin-top: 15px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
+  
+  
+  
+  .status2 {  
+    margin-left: -50px;
+    background-color: #FAF0DD; /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  } 
+  
+  
+  .campaign-icon{
+    width: 28.993px;
+  height: 29.14px;
+    margin-left:  -50px;
+    margin-top: -50px;
+    border-radius: 30px;
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  .dashboardarrow-icon{
+    margin-left: -122px;
+    margin-top: 100px;
+    width: 79.848px;
+  height: 100.87px;
+  }
+  
+  
+  .user-number{
+    margin-top: -20px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 44.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+  }
+  
+  .userx{
+    margin-top: -10px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 34.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .user-description{
+    width: 300px;
+     margin-left: -70px;
+     margin-bottom: -50px;
+     color: #000;
+    font-family: "Inter";
+    font-size: 8.91px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  
+  .user-card3 {  
+    width: 75.814px;
+    height: 64.15px;
+    margin-top: 300px;
+    margin-left: 50px;
+    display: flex;  
+    align-items: center;  
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px; 
+    background-color: white;  
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
+  }
+
+@media (min-width: 1260px) and (max-width: 1299px){
+ 
+
+
+.campaign-container{
+
+  margin-left: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.top-container {
+  display: flex; /* Keeps the elements side-by-side */
+  justify-content: space-between; /* Ensures spacing between the elements */
+  align-items: flex-start; /* Aligns items at the top */
+  flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+}
+
+
+
+
+.right-container{
+  width: 30%;
+  margin-right: 300px;
+  position: relative;
+
+}
+
+.wave{
+  width: 38.903px;
+  height: 38.55px;
+  margin-left: 40px;
+}
+
+.username{
+  margin-top: -15px;
+}
+
+.campaign-content{
+  margin-top: 90px;
+  color: #231F20;
+  font-family: "Inter";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.campaign-content1{
+margin-top: -16px;
+color: #231F20;
+font-family: "Inter";
+font-size: 14.98px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.start-campaign-btn{
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #A8A9AE;
+}
+
+.arrow{
+  margin-left: 3px;
+}
+
+
+
+
+
+.campaign-text{
+  padding: 10px;
+  color: #231F20;
+
+font-family: "Inter";
+font-size: 16.06px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+
+.leads-icon {
+  width: 18.486px;
+height: 19.08px;
+margin-right: 3px;
+margin-bottom: -3px;
+}
+
+.leads-badge{
+  position: relative;
+  margin-top: 190px;
+}
+
+.leads-text {
+  
+  color: #000;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  padding: 2px 10px 2px 10px;
+  background-color: #FFF;
+  font-family: "Inter";
+  font-size: 20.11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.senders-badge{
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.senders-text{
+
+
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 5px 9px 5px 9px;
+ 
+  color: #000;
+  background-color: #FFF;
+font-family: "Inter";
+font-size: 12.17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.senders-icon{
+  margin-right: 3px;
+  margin-bottom: -5px;
+  width: 13.36px;
+  height: 11.772px;
+}
+
+.user-card1 {  
+  width: 300.015px;
+  height: 166px;
+  margin-top: -140px;
+  margin-left: 150px;
+  display: flex;  
+  align-items: center;  
+  padding: 20px 20px 20px 20px;
+  border-radius: 15px; 
+ 
+  background-color: white;  
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.user-card {  
+  width: 335.45px;
+height: 30.12px;
+  margin-top: -180px;
+  margin-left: 130px;
+  display: flex;  
+  align-items: center;  
+  padding: 20px 20px 20px 20px;
+  border-radius: 15px; 
+ 
+  background-color: white;  
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+}  
+
+.avatar {  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  width: 28.097px;
+  height: 28.24px;
+  border-radius: 20%;  
+  color: #79C6AC;
+  background-color: #E8F8F3;
+font-family: "Inter";
+font-size: 14.28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}  
+
+.user-info {  
+  display: flex;  
+  margin-left: 10px;  
+  align-items: center;  
+  gap: 90px;
+}  
+
+.user-name {  
+  color: #000;
+
+font-family: "Inter";
+font-size: 12.88px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}  
+
+.campaign-name {  
+  color: #000;
+
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+   
+}  
+
+.status {  
+  margin-left: -40px;
+  background-color: rgba(144, 238, 144, 0.2); /* Light green background */  
+  padding: 4px 8px;  
+  border-radius: 12px;  
+  color: #3d9970; /* Darker text color */  
+  font-weight: bold;  
+  color: #000;
+
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}  
+
+
+.avatar2 {  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  width: 28.097px;
+  height: 28.24px;
+  border-radius: 20%;  
+  color: #79C6AC;
+  background-color: #E8F8F3;
+font-family: "Inter";
+font-size: 14.28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}  
+
+.user-info2 {  
+  display: flex;  
+  margin-left: 10px;  
+  align-items: center;  
+  gap: 90px;
+}  
+
+.user-name2 {  
+  color: #000;
+
+font-family: "Inter";
+font-size: 12.88px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}  
+
+.campaign-name2 {  
+  color: #000;
+
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+   
+}  
+
+
+.user-card2 {  
+  width: 332.75px;
+height: 45.28px;
+  margin-top: 15px;
+  margin-left: 140px;
+  display: flex;  
+  align-items: center;  
+  padding: 15px 15px 15px 15px;
+  border-radius: 15px; 
+ 
+  background-color: white;  
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}  
+
+
+
+.status2 {  
+  margin-left: -50px;
+  background-color: #FAF0DD; /* Light green background */  
+  padding: 4px 8px;  
+  border-radius: 12px;  
+  color: #3d9970; /* Darker text color */  
+  font-weight: bold;  
+  color: #000;
+
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} 
+
+
+.campaign-icon{
+  width: 28.993px;
+height: 29.14px;
+  margin-left:  -50px;
+  margin-top: -50px;
+  border-radius: 30px;
+  padding: 8px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+.dashboardarrow-icon{
+  margin-left: -122px;
+  margin-top: 100px;
+  width: 79.848px;
+height: 100.87px;
+}
+
+
+.user-number{
+  margin-top: -20px;
+  color: #000;
+font-family: "Inter";
+font-size: 44.41px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+.userx{
+  margin-top: -10px;
+  color: #000;
+font-family: "Inter";
+font-size: 34.41px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.user-description{
+  width: 300px;
+   margin-left: -70px;
+   margin-bottom: -50px;
+   color: #000;
+  font-family: "Inter";
+  font-size: 8.91px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.user-card3 {  
+  width: 75.814px;
+  height: 64.15px;
+  margin-top: 300px;
+  margin-left: 50px;
+  display: flex;  
+  align-items: center;  
+  padding: 10px 10px 10px 10px;
+  border-radius: 15px; 
+  background-color: white;  
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+}  
+}
