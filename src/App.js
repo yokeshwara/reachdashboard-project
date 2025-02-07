@@ -16,6 +16,7 @@ function App() {
     <Router>
       <div className="navbar-container">
         {/* Left Section */}
+        <img className="menu-icon" src="/assets/hugeicons_menu-03.svg" alt="menu" />
         <div className="navbar-logo">
           <img className="navbar-icon" src="/assets/reach-logo.svg" alt="Logo" />
         </div>
@@ -54,6 +55,7 @@ function App() {
 
         {/* Right Section */}
         <div className="navbar-actions">
+      
           <img className="search-icon" src="/assets/search icon.svg" alt="Search" />
           <img className="notification-icon" src="/assets/notification icon.svg" alt="Notifications" />
           <div className="navbar-profile">
@@ -283,11 +285,146 @@ function Dashboard() {
                     <h3>Started</h3>  
                     <p>1.837 <span>(60%)</span></p>  
                 </div>  
+
             </div>  
         </div>  
   </div>
+  <div className='bottom-container'>
+  <div className="reply-rates">  
+      <h2>Reply rates</h2>  
+      <div className='legend'>
+       <div className="legend-item">
+              <span className="legend-box lightpink"></span>  &gt;30%
+            </div>
+            <div className="legend-item">
+              <span className="legend-box mediumpink"></span>  &lt;60%
+            </div>
+            <div className="legend-item">
+              <span className="legend-box darkpink"></span>  &lt;60%
+            </div>
+            </div>
+            <div className="settings">
+          <select className="dropdown">
+            <option>Weekly</option>
+            <option>Monthly</option>
+          </select>
+          <span className="view-settings">
+            <img src="./assets/mdi-light_settings.svg" alt="settings" className="settings-icon"></img> View Settings <span className="small-line"></span><img src="./assets/oui_arrow-down.svg" className="uparrow-icon" alt="uparrow" ></img>
+          </span>
+        </div>
+      <div className="options">  
+        <span className='table-active'>Percentage</span>  
+        <span>Absolute</span>  
+        <span> + Add View</span>  
+      </div>  
+      <div className="table-container">
+      <table>  
+        <thead className='table-heading'>  
+          <tr>  
+            <th>Week</th>  
+            <th>Email Sent</th>  
+            <th>Avg. Rates</th>  
+            <th>Monday</th>  
+            <th>Tuesday</th>  
+            <th>Wednesday</th>  
+            <th>Thursday</th>  
+            <th>Friday</th>  
+            <th>Saturday</th>  
+            <th>Sunday</th>  
+          </tr>  
+        </thead>  
+        <tbody>  
+          <tr>  
+            <td className='greycolor'>Jan 1</td>  
+            <td className='greycolor'>125</td>  
+            <td className='greycolor'>87,6%</td>  
+            <td className="lightpink">78.2%</td>  
+            <td className="mediumpink">78.2%</td>  
+            <td className="darkpink">78.2%</td>  
+            <td className="mediumpink">78.2%</td>  
+            <td className="darkpink">78.2%</td>  
+            <td className="lightpink">78.2%</td>  
+            <td className="darkpink">78.2%</td>  
+          </tr>  
+          <tr>  
+            <td className='greycolor'>Jan 7</td>  
+            <td className='greycolor'>625</td>  
+            <td className='greycolor'>79.2%</td>  
+            <td className="mediumpink">782%</td>  
+            <td className="lightpink">782%</td>  
+            <td className="mediumpink">782%</td>  
+            <td className="darkpink">782%</td>  
+            <td className="mediumpink">782%</td>  
+            <td className="darkpink">782%</td>  
+            <td className="lightpink">782%</td>  
+          </tr>  
+          <tr>  
+            <td className='greycolor'>Jan 14</td>  
+            <td className='greycolor'>124</td>  
+            <td className='greycolor'>92,7%</td>  
+            <td className="lightpink">175%</td>  
+            <td className="darkpink">175%</td>  
+            <td className="lightpink">175%</td>  
+            <td className="lightpink">175%</td>  
+            <td className="darkpink">175%</td>  
+            <td className="mediumpink">175%</td>  
+            <td className="mediumpink">175%</td>  
+          </tr>  
+          <tr>  
+            <td className='greycolor'>Jan 28</td>  
+            <td className='greycolor'>65</td>  
+            <td className='greycolor'>89,6%</td>  
+            <td className="darkpink">824%</td>  
+            <td className="mediumpink">824%</td>  
+            <td className="darkpink">824%</td>  
+            <td className="darkpink">824%</td>  
+            <td className="lightpink">824%</td>  
+            <td className="lightpink">824%</td>  
+            <td className="lightpink">824%</td>  
+          </tr>  
+          <tr>  
+            <td className='greycolor'>Feb 1</td>  
+            <td className='greycolor'>285</td>  
+            <td className='greycolor'>79,6%</td>  
+            <td className="mediumpink">369%</td>  
+            <td className="lightpink">369%</td>  
+            <td className="mediumpink">369%</td>  
+            <td className="mediumpink">369%</td>  
+            <td className="darkpink">369%</td>  
+            <td className="mediumpink">369%</td>  
+            <td className="darkpink">369%</td>  
+          </tr>  
+          <tr>  
+            <td className='greycolor'>Feb 7</td>  
+            <td className='greycolor'>168</td>  
+            <td className='greycolor'>90,7%</td>  
+            <td className="mediumpink">28%</td>  
+            <td className="darkpink">28%</td>  
+            <td className="lightpink">28%</td>  
+            <td className="darkpink">28%</td>  
+            <td className="mediumpink">28%</td>  
+            <td className="darkpink">28%</td>  
+            <td className="mediumpink">28%</td>  
+          </tr>  
+        </tbody>  
+      </table>  
+      <div className='legend-mobile'>
+       <div className="legend-item">
+              <span className="legend-box lightpink"></span>  &gt;30%
+            </div>
+            <div className="legend-item">
+              <span className="legend-box mediumpink"></span>  &lt;60%
+            </div>
+            <div className="legend-item">
+              <span className="legend-box darkpink"></span>  &lt;60%
+            </div>
+            </div>
+        </div>
+        </div>
+       
+    </div>  
   </div>
-  
+ 
 }
 
 function Audience() {

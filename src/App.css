@@ -21,6 +21,12 @@
   
 }
 
+
+
+.menu-icon{
+  display: none;
+}
+
 .filter{
   margin-left: 470px;
   margin-top: -1px;
@@ -183,7 +189,7 @@
 
 .right-container{
   width: 30%;
-  margin-right: 300px;
+  margin-right: 275px;
   position: relative;
   margin-top: -40px;
 
@@ -542,13 +548,13 @@ line-height: normal;
 .engagement-container {  
   margin-top: 90px;
   background-color: #ffffff;  
-  width: 500px;
-  height: 285px;
+  width: 33.5%;
+  height: 250px;
   padding: 18px;  
   border-radius: 12px;
   border: 0.5px solid var(--Text-Colour-Caption-Text, #71767A);
 
-  margin-left: 90px;
+
 }  
 
 .table-title{
@@ -622,41 +628,44 @@ line-height: normal;
 
 
 .container {  
-  width: 50%;  
+  width: 52%;  
   height: 20%;  
   padding: 10px 1px 5px 5px;  
   margin-top: 80px;  
   position: relative;  
  
-  margin-left: 90px;  
+  margin-left: 70px;  
 }  
 
 .chart-container {  
-  width: 94%;  
+  width: 97%;  
+  height: 267px;  
   border: 0.5px solid var(--Text-Colour-Caption-Text, #71767A);  
   border-radius: 10px;  
-  padding: 10px 1px 10px 1px;  
-}  
+  padding: 10px 0; /* Removed side padding (left & right) */  
+  margin: 0 auto; /* Ensure it's centered with no extra margins */  
+}
 
 .large-text {  
   text-align: left;  
   font-size: 26px;  
-  margin-top: -280px;  
-  margin-left: 75px;  
+  margin-top: -240px;  
+  margin-bottom: -70px;
+  margin-left: 25px;  
   font-weight: bold;  
 }  
 
 .small-text {  
   text-align: left;  
   font-size: 20px;  
-  margin-top: -80px;  
-  margin-left: 75px;  
+  margin-top: -50px;  
+  margin-left: 25px;  
   font-weight: bold;  
 }  
 
 .footer-text {  
   position: absolute;  
-  bottom: -10px;  
+  bottom: 5px;  
   right: 85px;  
   font-size: 13px;  
   font-weight: normal;  
@@ -665,7 +674,7 @@ line-height: normal;
 
 .filter-container {  
   position: absolute;  
-  bottom: -20px;  
+  bottom: -1px;  
   right: 145px;  
   display: inline-flex;  
   align-items: center;  
@@ -682,17 +691,186 @@ line-height: normal;
   padding: 5px 10px;  
 }  
 
+
+.bottom-container{
+  width: 95.5%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+
+.reply-rates { 
+  margin-top: 15px;
+  font-family: Arial, sans-serif;  
+  margin-left: 90px;  
+  width: 95%;
+  height: 460px;
+  border-radius: 12px;
+  border: 0.5px solid var(--Text-Colour-Caption-Text, #71767A);
+  background-color: #FFF;
+  padding: 5px 10px 2px 10px;
+  top: 0; /* Keeps it fixed inside */
+  left: 1px; /* Ensures it does not move */
+}
+
+h2 {  
+  margin-bottom: 10px;  
+  color: #000;
+
+font-family: "Inter";
+font-size: 19px;
+font-style: normal;
+font-weight: 500;
+line-height: normal
+}  
+
+.options {
+  color: #000;
+
+font-family: "Inter";
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border-bottom: 1px solid #A8A9AE;
+  margin-bottom: 15px; 
+  padding-bottom: -5px;
+  padding-top: -30px; 
+  display: flex;
+  gap: 10px;
+}  
+
+
+.table-active{
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--500-primary, #BF1249);
+}
+
+table {  
+  width: 100%;  
+  border-collapse: separate; /* Allows spacing between td elements */
+  border-spacing: 5px; /* Adds horizontal spacing for td only */
+  
+}  
+
+
+
+
+th {  
+  background-color: #FFF; /* Keep header styling */
+  border: none;
+  padding: 10px;
+  text-align: center;
+
+}  
+
+td {  
+  border: 1px solid #ccc;  
+  padding: 12px; /* Adds space inside each cell */
+  text-align: center;  
+  background-color: #fff; /* Ensures consistent background */
+}  
+
+.greycolor{
+  background-color: #D9D9D9;
+}
+
+.lightpink{
+  background-color: var(--Reply-rates-25, #F7E1E8);;
+}
+
+.mediumpink{
+  background-color: var(--200, #EFC4D1);
+}
+
+.darkpink{
+  background-color: var(--Reply-rates-100, #DF88A4);
+}
+
+.legend-mobile{
+  display: none;
+}
+
+.legend{
+  display: flex;
+  justify-content:flex-end;
+  gap: 40px;
+  margin-right: 40px;
+  margin-top: -30px;
+  color: #000;
+
+font-family: "Inter";
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.legend-box {
+  margin-bottom: -5px;
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+
+.small-line{
+  background: var(--Text-Colour-Caption-Text, #71767A);
+  margin: 0 8px; /* Adjust the value as needed */
+width: 1px;
+height: 16px;
+}
+
+.settings {
+  display: flex;
+  justify-content:flex-end;
+  margin-top: 15px;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: -15px;
+  margin-right: 30px;
+}
+
+.dropdown {
+  padding: 1px;
+  border-radius: 6px;
+  border: 0.5px solid var(--Text-Colour-Caption-Text, #71767A);
+  background: #FFF;
+
+font-family: "Inter";
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.view-settings {
+  display: flex;
+  align-items: center;
+  
+  cursor: pointer;
+  font-size: 14px;
+
+}
+
+.settings-icon {
+  width: 16px;
+height: 16px;
+}
 /* Media Queries */  
 
 
-@media (min-width: 744px) and (max-width: 779px){
+
+@media (min-width: 650px) and (max-width: 699px){
 
 
-  
+
   .small-text {  
     text-align: left;  
     font-size: 12px;  
-    margin-top: -50px;  
+    margin-top: 80px;  
     margin-left: -45px;  
     font-weight: bold;  
   }  
@@ -700,59 +878,256 @@ line-height: normal;
   .large-text {  
     text-align: left;  
     font-size: 20px;  
-    margin-top: -280px;  
+    margin-bottom: -140px;
     margin-left: -45px;  
     font-weight: bold;  
   }
   
-  .filter-container{
-    margin-left: -20px;
-  }
   
-    .chart-container{
-      margin-left: -60px;
-      width: 370px;
-    }
-  
-    .filter{
-    
-      margin-left: 10px;
-    }
-    
-    .engagement-container{
-      margin-left: 42px;
-      width: 370px;
-    }
-  
-    .card{
-      width: 125px;
-  
-      height: 105px;
-    }
-   
-  
-  
-    }
-@media (min-width: 780px) and (max-width: 889px){
-
-
-  
-.small-text {  
-  text-align: left;  
-  font-size: 12px;  
-  margin-top: -50px;  
-  margin-left: -45px;  
-  font-weight: bold;  
-}  
-
-.large-text {  
-  text-align: left;  
-  font-size: 20px;  
-  margin-top: -280px;  
-  margin-left: -45px;  
-  font-weight: bold;  
+.filter-container{
+  margin-left: -20px;
 }
 
+  .chart-container{
+    margin-left: -60px;
+    width: 400px;
+  }
+
+  .filter{
+  
+    margin-left: 10px;
+  }
+
+  .table-title{
+    width: 350px;
+ } 
+  
+  
+  .bottom-container{
+    width: 107%;
+    margin-left: -70px;
+  }
+  
+  
+  .engagement-container{
+    margin-left: 20px;
+    width: 370px;
+  }
+
+  
+  table{
+    border-spacing: 2px;
+  }
+  
+
+  td{
+    font-size: 10px;
+  }
+  
+  .reply-rates{
+  
+    width:  115.5%;
+    margin-left: 87px;
+    height: 80%;
+  }
+    
+   
+   
+  .card{
+    width: 100px;
+    padding: 1px;
+    height: 85px;
+  }
+  
+  
+  
+  
+    }
+
+
+@media (min-width: 700px) and (max-width: 749px){
+
+
+
+  .small-text {  
+    text-align: left;  
+    font-size: 12px;  
+    margin-top: 80px;  
+    margin-left: -45px;  
+    font-weight: bold;  
+  }  
+  
+  .large-text {  
+    text-align: left;  
+    font-size: 20px;  
+    margin-bottom: -140px;
+    margin-left: -45px;  
+    font-weight: bold;  
+  }
+  
+  
+.filter-container{
+  margin-left: -20px;
+}
+
+  .chart-container{
+    margin-left: -60px;
+    width: 400px;
+  }
+
+  .filter{
+  
+    margin-left: 10px;
+  }
+
+  .table-title{
+    width: 350px;
+ } 
+  
+  
+  .bottom-container{
+    width: 107%;
+    margin-left: -70px;
+  }
+  
+  
+  .engagement-container{
+    margin-left: 20px;
+    width: 370px;
+  }
+
+  
+  table{
+    border-spacing: 2px;
+  }
+  
+
+  td{
+    font-size: 10px;
+  }
+  
+  .reply-rates{
+  
+    width:  107.5%;
+    margin-left: 87px;
+    height: 80%;
+  }
+    
+   
+   
+  .card{
+    width: 100px;
+    padding: 1px;
+    height: 85px;
+  }
+  
+  
+  
+  
+    }
+
+
+@media (min-width: 750px) and (max-width: 799px){
+
+
+
+  .small-text {  
+    text-align: left;  
+    font-size: 12px;  
+    margin-top: 80px;  
+    margin-left: -45px;  
+    font-weight: bold;  
+  }  
+  
+  .large-text {  
+    text-align: left;  
+    font-size: 20px;  
+    margin-bottom: -140px;
+    margin-left: -45px;  
+    font-weight: bold;  
+  }
+  
+  
+.filter-container{
+  margin-left: -20px;
+}
+
+  .chart-container{
+    margin-left: -60px;
+    width: 400px;
+  }
+
+  .filter{
+  
+    margin-left: 10px;
+  }
+
+  .table-title{
+    width: 350px;
+ } 
+  
+  
+  .bottom-container{
+    width: 107%;
+    margin-left: -70px;
+  }
+  
+  
+  .engagement-container{
+    margin-right: -67px;
+    width: 370px;
+  }
+
+  
+  table{
+    border-spacing: 2px;
+  }
+  
+
+  td{
+    font-size: 10px;
+  }
+  
+  .reply-rates{
+  
+    width:  105.5%;
+    margin-left: 87px;
+    height: 80%;
+  }
+    
+   
+   
+  .card{
+    width: 100px;
+    padding: 1px;
+    height: 85px;
+  }
+  
+  
+  
+  
+    }
+
+
+@media (min-width: 800px) and (max-width: 889px){
+
+  .small-text {  
+    text-align: left;  
+    font-size: 12px;  
+    margin-top: 80px;  
+    margin-left: -45px;  
+    font-weight: bold;  
+  }  
+  
+  .large-text {  
+    text-align: left;  
+    font-size: 20px;  
+    margin-bottom: -140px;
+    margin-left: -45px;  
+    font-weight: bold;  
+  }
+  
+  
 .filter-container{
   margin-left: -20px;
 }
@@ -766,25 +1141,153 @@ line-height: normal;
     margin-left: 10px;
   }
   
+  
+  .bottom-container{
+    width: 107%;
+    margin-left: -70px;
+  }
+  
+  
   .engagement-container{
-    margin-left: -22px;
+    margin-left: -52px;
     width: 370px;
   }
 
-  .card{
-    width: 125px;
+  .table-title{
+     width: 300px;
+  } 
 
+  
+  table{
+    border-spacing: 2px;
+    width: 100%;
+  }
+  
+
+  th{
+   
+    padding: 8px;
+  }
+  
+  td{
+    font-size: 10.5px;
+  }
+
+  .reply-rates{
+  
+    width:  90.5%;
+    margin-left: 87px;
+    height: 70%;
+  }
+    
+  .table-heading{
+    width: 500px;
+  }
+   
+   
+  .card{
+    width: 100px;
+    padding: 1px;
+    height: 85px;
+  }
+  
+  
+  
+  
+    
+   
+   
+  
+  
+  
+ 
+
+
+  }
+
+ 
+
+  @media (min-width: 890px) and (max-width: 1023px){
+
+    .chart-container{
+      margin-left: -60px;
+    }
+  
+    .filter{
+    
+      margin-left: 10px;
+    }
+  
+  
+    .card{
+      padding: 5px;
+    }
+    
+    
+  .header h2{
+     font-size: 20px;
+  }
+  
+  
+      
+  .small-text {  
+    text-align: left;  
+    font-size: 12px;  
+    margin-top: 80px;  
+    margin-left: -45px;  
+    font-weight: bold;  
+  }  
+  
+  .large-text {  
+    text-align: left;  
+    font-size: 20px;  
+    margin-bottom: -140px;
+    margin-left: -45px;  
+    font-weight: bold;  
+  }
+  
+  
+  .bottom-container{
+    width: 107%;
+    margin-left: -70px;
+  }
+  
+  
+  
+  .engagement-container{
+    margin-left: -25px;
+    width: 40%;
+    height: 250px;
+  }
+  
+  
+  
+  
+  .reply-rates{
+  
+    width:  90.5%;
+    margin-left: 87px;
+    height: 70%;
+  }
+    
+  td{
+    font-size: 11.5px;
+  }
+   
+   
+  .card{
+    width: 100px;
+    
     height: 105px;
   }
- 
+  
+   
+  
+  
+    }
+  
 
-
-  }
-
- 
-
-
-@media (min-width: 890px) and (max-width: 1099px){
+@media (min-width: 1024px) and (max-width: 1099px){
 
   .chart-container{
     margin-left: -60px;
@@ -794,17 +1297,25 @@ line-height: normal;
   
     margin-left: 10px;
   }
+
+
+  .card{
+    padding: 1px;
+  }
   
 .header h2{
    font-size: 20px;
 }
 
-
+td{
+  font-size: 11.5px;
+}
+ 
     
 .small-text {  
   text-align: left;  
   font-size: 12px;  
-  margin-top: -50px;  
+  margin-top: 80px;  
   margin-left: -45px;  
   font-weight: bold;  
 }  
@@ -812,19 +1323,43 @@ line-height: normal;
 .large-text {  
   text-align: left;  
   font-size: 20px;  
-  margin-top: -280px;  
+  margin-bottom: -140px;
   margin-left: -45px;  
   font-weight: bold;  
 }
 
 
+.bottom-container{
   
+  width: 100%;
+  margin-left: -70px;
+}
+
+
+
+.engagement-container{
+  margin-left: -33px;
+  height: 250px;
+}
+
+
+
+.reply-rates{
+
   
-  .engagement-container{
-    margin-left: -22px;
-    width: 370px;
-  }
+  margin-left: 87px;
+  width: 95%;
+  height: 70%;
+}
+  
  
+ 
+.card{
+  width: 100px;
+
+  height: 105px;
+}
+
 
 
   }
@@ -838,9 +1373,17 @@ line-height: normal;
   }
   
   .engagement-container{
-    margin-left: 12px;
-    width: 370px;
+    margin-left: 5px;
   }
+
+  .reply-rates{
+
+    width:  90.5%;
+    margin-left: 87px;
+  
+  }
+
+
   
   }
 
@@ -853,13 +1396,19 @@ line-height: normal;
   }
   
   .engagement-container{
-    margin-left: 12px;
-    width: 400px;
+    margin-left: 5px;
+  }
+
+  .reply-rates{
+
+    width:  90.5%;
+    margin-left: 87px;
+  
   }
   
   }
 
-@media (min-width: 1300px) and (max-width: 1514px){
+@media (min-width: 1300px) and (max-width: 1920px){
 
 .filter{
 
@@ -868,40 +1417,1379 @@ line-height: normal;
 
 .engagement-container{
   margin-left: 5px;
-}
-
-}
-
-@media (min-width: 744px) and (max-width: 1049px){
-
-
-.navbar-container{
-  width: 100%;
-}
-
-.navbar-logo{
-  margin-left: 1px;
-}
-
-
-.navbar-actions{
-  margin-left: 10px;
-  padding: 10px 10px 10px 20px;
-}
-
-}
-
-
-@media (min-width: 744px) and (max-width: 790px){
  
+}
+
+.reply-rates{
+
+  width: 90%;
+  margin-left: 87px;
+
+}
+
+}
+
+
+@media (min-width: 200px)and (max-width: 375px) {
+
+
+  .navbar-container{
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .menu-icon{
+    display: block;
+  
+  }
+
+
   .navbar-links{
-    margin-left: 8px;
+    display: none;
+  }
+
+  .navbar-logo{
+    align-items: center;
+  }
+
+  .navbar-actions{
+    margin-left: 70px;
+  }
+
+  .profile-image{
+    display: none;
+  }
+
+  .top-container {
+    display: flex; /* Keeps the elements side-by-side */
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing between the elements */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+  }
+
+  .campaign-container{
+    margin-top: -70px;
+    width: 90%;
+    margin-left: 20px;
+
+   
+  }
+
+  .campaign-content{
+    color: #231F20;
+
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+  .username{
+    margin-top: -25px;
+  }
+
+  .campaign-content1{
+    margin-top: 20px;
+    width:  344px;
+    color: #231F20;
+
+font-family: "Inter";
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+
+
+
+  }
+
+  .start-campaign-btn{
+     margin-left: 80px;
+  }
+
+  .right-container{
+    display: none;
+  }
+
+  .middle-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .background-image{
+    width: 370px;
+height: 221px;
+  }
+
+  .container {  
+    width: 92%;  
+    height: 20%;  
+    padding: 10px 1px 5px 5px;  
+    margin-top: 50px;  
+    position: relative;  
+   
+    margin-left: 10px;  
+  }  
+
+  .filter-button{
+    width: 90px;
+  }
+
+  .filter-container{
+    margin-right:-100px;
+  }
+
+
+  .engagement-container{
+   margin-top: 270px;
+   width: 80%;
+   height: 70%;
+   margin-left: 20px;
+  }
+
+
+  .card{
+    padding:1px;
+    border: 0.1px solid var(--Text-Colour-Disable-Text, #A9AEB1);
+  } 
+
+  .bottom-container{
+    width: 90%;
+    margin-bottom: 50px;
+     margin-left: -70px;
+  }
+
+  .settings{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+
+
+  .dropdown{
+    margin-bottom: -90px;
+   
+  }
+
+  .view-settings{
+    margin-bottom: -90px;
+    margin-left: 51px;
+  }
+  
+
+  .table-active{
+  
+  }
+
+  .reply-rates h2 {  
+    margin-top: 1px;  
+    
+  }  
+
+  .reply-rates{
+    height: 520px;
+   
+  }
+
+
+  table{
+    margin-top: 50px;
+  
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents text wrapping */
+    -ms-overflow-style: none; /* Hides scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+  }
+
+
+  .table-container::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome, Safari, and Edge */
+  }
+
+}
+
+
+@media (min-width: 376px)and (max-width: 430px) {
+
+
+  .navbar-container{
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .menu-icon{
+    display: block;
+  
+  }
+
+
+  .navbar-links{
+    display: none;
+  }
+
+  .navbar-logo{
+    align-items: center;
+  }
+
+  .navbar-actions{
+    margin-left: 70px;
+  }
+
+  .profile-image{
+    display: none;
+  }
+
+  .top-container {
+    display: flex; /* Keeps the elements side-by-side */
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing between the elements */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+  }
+
+  .campaign-container{
+    margin-top: -70px;
+    width: 90%;
+    margin-left: 20px;
+
+   
+  }
+
+  .campaign-content{
+    color: #231F20;
+
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+  .username{
+    margin-top: -25px;
+  }
+
+  .campaign-content1{
+    margin-top: 20px;
+    width:  344px;
+    color: #231F20;
+
+font-family: "Inter";
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+
+
+
+  }
+
+  .start-campaign-btn{
+     margin-left: 80px;
+  }
+
+  .right-container{
+    display: none;
+  }
+
+  .middle-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .background-image{
+    width: 400px;
+height: 221px;
+  }
+
+  .container {  
+    width: 95%;  
+    height: 20%;  
+    padding: 10px 1px 5px 5px;  
+    margin-top: 50px;  
+    position: relative;  
+   
+    margin-left: 10px;  
+  }  
+
+  .filter-button{
+    width: 90px;
+  }
+
+  .filter-container{
+    margin-right:-100px;
+  }
+
+
+  .engagement-container{
+   margin-top: 270px;
+   width: 83%;
+   height: 70%;
+   margin-left: 20px;
+  }
+
+
+  .card{
+    padding:1px;
+    border: 0.1px solid var(--Text-Colour-Disable-Text, #A9AEB1);
+  } 
+
+  .bottom-container{
+    width: 92%;
+    margin-bottom: 50px;
+     margin-left: -70px;
+  }
+
+  .settings{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+
+
+  .dropdown{
+    margin-bottom: -90px;
+   
+  }
+
+  .view-settings{
+    margin-bottom: -90px;
+    margin-left: 51px;
+  }
+  
+
+  .table-active{
+  
+  }
+
+  .reply-rates h2 {  
+    margin-top: 1px;  
+    
+  }  
+
+  .reply-rates{
+    height: 520px;
+   
+  }
+
+
+  table{
+    margin-top: 50px;
+  
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents text wrapping */
+    -ms-overflow-style: none; /* Hides scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+  }
+
+
+  .table-container::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome, Safari, and Edge */
+  }
+
+}
+
+@media (min-width: 431px)and (max-width: 480px) {
+
+
+  .navbar-container{
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .menu-icon{
+    display: block;
+  
+  }
+
+
+  .navbar-links{
+    display: none;
+  }
+
+  .navbar-logo{
+    align-items: center;
+  }
+
+  .navbar-actions{
+    margin-left: 70px;
+  }
+
+  
+
+  .profile-image{
+    display: none;
+  }
+
+  .top-container {
+    display: flex; /* Keeps the elements side-by-side */
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing between the elements */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+  }
+
+  .campaign-container{
+    margin-top: -70px;
+    width: 95%;
+    margin-left: 20px;
+
+   
+  }
+
+  .campaign-content{
+    color: #231F20;
+
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+  .username{
+    margin-top: -25px;
+  }
+
+  .campaign-content1{
+    margin-top: 20px;
+    width:  344px;
+    color: #231F20;
+
+font-family: "Inter";
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+
+
+
+  }
+
+  .start-campaign-btn{
+     margin-left: 80px;
+  }
+
+  .right-container{
+    display: none;
+  }
+
+  .middle-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .background-image{
+    width: 440px;
+height: 221px;
+  }
+
+  .container {  
+    width: 97%;  
+    height: 20%;  
+    padding: 10px 1px 5px 5px;  
+    margin-top: 50px;  
+    position: relative;  
+   
+    margin-left: 10px;  
+  }  
+
+  .filter-button{
+    width: 90px;
+  }
+
+  .filter-container{
+    margin-right:-100px;
+  }
+
+
+  .engagement-container{
+   margin-top: 270px;
+   width: 85%;
+   height: 70%;
+   margin-left: 20px;
+  }
+
+
+  .card{
+    padding:1px;
+    border: 0.1px solid var(--Text-Colour-Disable-Text, #A9AEB1);
+  } 
+
+  .bottom-container{
+    width: 93%;
+    margin-bottom: 50px;
+     margin-left: -70px;
+  }
+
+  .settings{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+
+
+  .dropdown{
+    margin-bottom: -90px;
+   
+  }
+
+  .view-settings{
+    margin-bottom: -90px;
+    margin-left: 51px;
+  }
+  
+
+  .table-active{
+  
+  }
+
+  .reply-rates h2 {  
+    margin-top: 1px;  
+    
+  }  
+
+  .reply-rates{
+    height: 520px;
+   
+  }
+
+
+  table{
+    margin-top: 50px;
+  
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents text wrapping */
+    -ms-overflow-style: none; /* Hides scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+  }
+
+
+  .table-container::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome, Safari, and Edge */
+  }
+
+}
+
+
+@media (min-width: 481px)and (max-width: 540px) {
+
+
+  .navbar-container{
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .menu-icon{
+    display: block;
+  
+  }
+
+
+  .navbar-links{
+    display: none;
+  }
+
+  .navbar-logo{
+    align-items: center;
+  }
+
+  .navbar-actions{
+    margin-left: 70px;
+  }
+
+  
+
+  .profile-image{
+    display: none;
+  }
+
+  .top-container {
+    display: flex; /* Keeps the elements side-by-side */
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing between the elements */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+  }
+
+  .campaign-container{
+    margin-top: -70px;
+    width: 95%;
+    margin-left: 20px;
+
+   
+  }
+
+  .campaign-content{
+    color: #231F20;
+
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+  .username{
+    margin-top: -25px;
+  }
+
+  .campaign-content1{
+    margin-top: 20px;
+    width:  344px;
+    color: #231F20;
+
+font-family: "Inter";
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+
+
+
+  }
+
+  .start-campaign-btn{
+     margin-left: 80px;
+  }
+
+  .right-container{
+    display: none;
+  }
+
+  .middle-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .background-image{
+    width: 530px;
+height: 221px;
+  }
+
+  .container {  
+    width: 97%;  
+    height: 20%;  
+    padding: 10px 1px 5px 5px;  
+    margin-top: 50px;  
+    position: relative;  
+   
+    margin-left: 10px;  
+  }  
+
+  .filter-button{
+    width: 90px;
+  }
+
+  .filter-container{
+    margin-right:-100px;
+  }
+
+
+  .engagement-container{
+   margin-top: 270px;
+   width: 87%;
+   height: 70%;
+   margin-left: 20px;
+  }
+
+
+  .card{
+    padding:1px;
+    border: 0.1px solid var(--Text-Colour-Disable-Text, #A9AEB1);
+  } 
+
+  .bottom-container{
+    width: 95%;
+    margin-bottom: 50px;
+     margin-left: -70px;
+  }
+
+  .settings{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+
+
+  .dropdown{
+    margin-bottom: -90px;
+   
+  }
+
+  .view-settings{
+    margin-bottom: -90px;
+    margin-left: 51px;
+  }
+  
+
+  .table-active{
+  
+  }
+
+  .reply-rates h2 {  
+    margin-top: 1px;  
+    
+  }  
+
+  .reply-rates{
+    height: 520px;
+   
+  }
+
+
+  table{
+    margin-top: 50px;
+  
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents text wrapping */
+    -ms-overflow-style: none; /* Hides scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+  }
+
+
+  .table-container::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome, Safari, and Edge */
+  }
+
+}
+
+
+@media (min-width: 541px)and (max-width: 649px) {
+
+
+  .navbar-container{
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .menu-icon{
+    display: block;
+  
+  }
+
+
+  .navbar-links{
+    display: none;
+  }
+
+  .navbar-logo{
+    align-items: center;
+  }
+
+  .navbar-actions{
+    margin-left: 70px;
+  }
+
+  
+
+  .profile-image{
+    display: none;
+  }
+
+  .top-container {
+    display: flex; /* Keeps the elements side-by-side */
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing between the elements */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+  }
+
+  .campaign-container{
+    margin-top: -70px;
+    width: 95%;
+    margin-left: 20px;
+
+   
+  }
+
+  .campaign-content{
+    color: #231F20;
+
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+  .username{
+    margin-top: -25px;
+  }
+
+  .campaign-content1{
+    margin-top: 20px;
+    width:  344px;
+    color: #231F20;
+
+font-family: "Inter";
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+
+
+
+  }
+
+  .start-campaign-btn{
+     margin-left: 80px;
+  }
+
+  .right-container{
+    display: none;
+  }
+
+  .middle-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .background-image{
+    width: 650px;
+height: 221px;
+  }
+
+  .container {  
+    width: 97%;  
+    height: 20%;  
+    padding: 10px 1px 5px 5px;  
+    margin-top: 50px;  
+    position: relative;  
+   
+    margin-left: 10px;  
+  }  
+
+  .filter-button{
+    width: 90px;
+  }
+
+  .filter-container{
+    margin-right:-100px;
+  }
+
+
+  .engagement-container{
+   margin-top: 270px;
+   width: 89%;
+   height: 70%;
+   margin-left: 20px;
+  }
+
+
+  .card{
+    padding:1px;
+    border: 0.1px solid var(--Text-Colour-Disable-Text, #A9AEB1);
+  } 
+
+  .bottom-container{
+    width: 96%;
+    margin-bottom: 50px;
+     margin-left: -70px;
+  }
+
+  .settings{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+
+
+  .dropdown{
+    margin-bottom: -90px;
+   
+  }
+
+  .view-settings{
+    margin-bottom: -90px;
+    margin-left: 51px;
+  }
+  
+
+  .table-active{
+  
+  }
+
+  .reply-rates h2 {  
+    margin-top: 1px;  
+    
+  }  
+
+  .reply-rates{
+    height: 520px;
+   
+  }
+
+
+  table{
+    margin-top: 50px;
+  
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents text wrapping */
+    -ms-overflow-style: none; /* Hides scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+  }
+
+
+  .table-container::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome, Safari, and Edge */
+  }
+
+}
+
+@media (min-width: 650px) and (max-width: 699px){
+ 
+  
+  .navbar-links{
+    margin-left: 102px;
+    
+  }
+
+  .navbar-item{
+    font-size: 13px;
+  }
+
+  .navbar-logo{
+    width: 30px;
+    margin-left: -1px;
+  }
+
+  .navbar-actions{
+    margin-left: 58px;
   }
 
   .navbar-container{
-    width: 110%;
+    width: 120%;
+  }
+  .campaign-container{
+    width: 33%;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .top-container {
+    display: flex; /* Keeps the elements side-by-side */
+    justify-content: space-between; /* Ensures spacing between the elements */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+  }
+  
+
+
+ 
+  
+  
+  .right-container{
+    width: 25%;
+    margin-right: 156px;
+    position: relative;
+  
+  }
+  
+  .wave{
+    width: 38.903px;
+    height: 38.55px;
+    margin-left: 40px;
+  }
+  
+  .username{
+    margin-top: -15px;
+  }
+  
+  .campaign-content{
+    margin-top: 90px;
+    color: #231F20;
+    font-family: "Inter";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .campaign-content1{
+    width: 500px;
+  margin-top: -16px;
+  color: #231F20;
+  font-family: "Inter";
+  font-size: 11.98px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .start-campaign-btn{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #A8A9AE;
+  }
+  
+  .arrow{
+    margin-left: 3px;
+  }
+  
+  
+  
+  
+  
+  .campaign-text{
+    padding: 10px;
+    color: #231F20;
+  
+  font-family: "Inter";
+  font-size: 16.06px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  
+  
+  .leads-icon {
+    width: 18.486px;
+  height: 19.08px;
+  margin-right: 3px;
+  margin-bottom: -3px;
+  }
+  
+  .leads-badge{
+    width: 100px;
+    margin-top: 190px;
+  }
+  
+  .leads-text {
+    margin-top: -20px;
+    color: #000;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 2px 10px 2px 10px;
+    background-color: #FFF;
+    font-family: "Inter";
+    font-size: 20.11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .senders-badge{
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  .senders-text{
+  
+  
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 5px 9px 5px 9px;
+   
+    color: #000;
+    background-color: #FFF;
+  font-family: "Inter";
+  font-size: 12.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .senders-icon{
+    margin-right: 3px;
+    margin-bottom: -5px;
+    width: 13.36px;
+    height: 11.772px;
+  }
+  
+  .user-card1 {  
+    width: 200.015px;
+    height: 166px;
+    margin-top: -140px;
+    margin-left: 150px;
+    display: flex;  
+    align-items: center;  
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+  
+  .user-card {  
+    width: 245.45px;
+  height: 30.12px;
+    margin-top: -170px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }  
+  
+  .avatar {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 50px;
+  }  
+  
+  .user-name {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  .status {  
+    margin-left: -40px;
+    background-color: rgba(144, 238, 144, 0.2); /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }  
+  
+  
+  .avatar2 {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info2 {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 55px;
+  }  
+  
+  .user-name2 {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name2 {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  
+  .user-card2 {  
+    width: 252.75px;
+  height: 45.28px;
+    margin-top: 15px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
+  
+  
+  
+  .status2 {  
+    margin-left: -50px;
+    background-color: #FAF0DD; /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  } 
+  
+  
+  .campaign-icon{
+    width: 28.993px;
+  height: 29.14px;
+    margin-left:  -50px;
+    margin-top: -50px;
+    border-radius: 30px;
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  .dashboardarrow-icon{
+    margin-left: -130px;
+    margin-top: 100px;
+    width: 79.848px;
+  height: 100.87px;
+  }
+  
+  
+  .user-number{
+    margin-top: -20px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 44.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+  }
+  
+  .userx{
+    margin-top: -10px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 34.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .user-description{
+    width: 300px;
+     margin-left: -70px;
+     margin-bottom: -50px;
+     color: #000;
+    font-family: "Inter";
+    font-size: 8.91px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  
+  .user-card3 {  
+    width: 65.814px;
+    height: 64.15px;
+    margin-top: 300px;
+    margin-left: 45px;
+    display: flex;  
+    align-items: center;  
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px; 
+    background-color: white;  
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
   }
 
+
+@media (min-width: 700px) and (max-width: 743px){
+ 
+  
+  .navbar-links{
+    margin-left: 102px;
+    
+  }
+
+  .navbar-item{
+    font-size: 13px;
+  }
+
+  .navbar-logo{
+    width: 30px;
+    margin-left: -1px;
+  }
+
+  .navbar-actions{
+    margin-left: 58px;
+  }
+
+  .navbar-container{
+    width: 120%;
+  }
   .campaign-container{
     width: 33%;
     margin-left: 20px;
@@ -922,7 +2810,403 @@ line-height: normal;
   
   .right-container{
     width: 25%;
-    margin-right: 220px;
+    margin-right: 196px;
+    position: relative;
+  
+  }
+  
+  .wave{
+    width: 38.903px;
+    height: 38.55px;
+    margin-left: 40px;
+  }
+  
+  .username{
+    margin-top: -15px;
+  }
+  
+  .campaign-content{
+    margin-top: 90px;
+    color: #231F20;
+    font-family: "Inter";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .campaign-content1{
+    width: 500px;
+  margin-top: -16px;
+  color: #231F20;
+  font-family: "Inter";
+  font-size: 11.98px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .start-campaign-btn{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #A8A9AE;
+  }
+  
+  .arrow{
+    margin-left: 3px;
+  }
+  
+  
+  
+  
+  
+  .campaign-text{
+    padding: 10px;
+    color: #231F20;
+  
+  font-family: "Inter";
+  font-size: 16.06px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  
+  
+  .leads-icon {
+    width: 18.486px;
+  height: 19.08px;
+  margin-right: 3px;
+  margin-bottom: -3px;
+  }
+  
+  .leads-badge{
+    width: 100px;
+    margin-top: 190px;
+  }
+  
+  .leads-text {
+    margin-top: -20px;
+    color: #000;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 2px 10px 2px 10px;
+    background-color: #FFF;
+    font-family: "Inter";
+    font-size: 20.11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .senders-badge{
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  .senders-text{
+  
+  
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 5px 9px 5px 9px;
+   
+    color: #000;
+    background-color: #FFF;
+  font-family: "Inter";
+  font-size: 12.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .senders-icon{
+    margin-right: 3px;
+    margin-bottom: -5px;
+    width: 13.36px;
+    height: 11.772px;
+  }
+  
+  .user-card1 {  
+    width: 200.015px;
+    height: 166px;
+    margin-top: -140px;
+    margin-left: 150px;
+    display: flex;  
+    align-items: center;  
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+  
+  .user-card {  
+    width: 245.45px;
+  height: 30.12px;
+    margin-top: -170px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.25);
+  }  
+  
+  .avatar {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 50px;
+  }  
+  
+  .user-name {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  .status {  
+    margin-left: -40px;
+    background-color: rgba(144, 238, 144, 0.2); /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }  
+  
+  
+  .avatar2 {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 28.097px;
+    height: 28.24px;
+    border-radius: 20%;  
+    color: #79C6AC;
+    background-color: #E8F8F3;
+  font-family: "Inter";
+  font-size: 14.28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .user-info2 {  
+    display: flex;  
+    margin-left: 10px;  
+    align-items: center;  
+    gap: 55px;
+  }  
+  
+  .user-name2 {  
+    color: #000;
+  
+  font-family: "Inter";
+  font-size: 12.88px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }  
+  
+  .campaign-name2 {  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     
+  }  
+  
+  
+  .user-card2 {  
+    width: 252.75px;
+  height: 45.28px;
+    margin-top: 15px;
+    margin-left: 130px;
+    display: flex;  
+    align-items: center;  
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px; 
+   
+    background-color: white;  
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
+  
+  
+  
+  .status2 {  
+    margin-left: -50px;
+    background-color: #FAF0DD; /* Light green background */  
+    padding: 4px 8px;  
+    border-radius: 12px;  
+    color: #3d9970; /* Darker text color */  
+    font-weight: bold;  
+    color: #000;
+  
+    font-family: "Inter";
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  } 
+  
+  
+  .campaign-icon{
+    width: 28.993px;
+  height: 29.14px;
+    margin-left:  -50px;
+    margin-top: -50px;
+    border-radius: 30px;
+    padding: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  .dashboardarrow-icon{
+    margin-left: -130px;
+    margin-top: 100px;
+    width: 79.848px;
+  height: 100.87px;
+  }
+  
+  
+  .user-number{
+    margin-top: -20px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 44.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+  }
+  
+  .userx{
+    margin-top: -10px;
+    color: #000;
+  font-family: "Inter";
+  font-size: 34.41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .user-description{
+    width: 300px;
+     margin-left: -70px;
+     margin-bottom: -50px;
+     color: #000;
+    font-family: "Inter";
+    font-size: 8.91px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  
+  .user-card3 {  
+    width: 65.814px;
+    height: 64.15px;
+    margin-top: 300px;
+    margin-left: 45px;
+    display: flex;  
+    align-items: center;  
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px; 
+    background-color: white;  
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+  }  
+  }
+
+
+@media (min-width: 744px) and (max-width: 790px){
+ 
+  
+  .navbar-links{
+    margin-left: 102px;
+    
+  }
+
+  .navbar-item{
+    font-size: 13px;
+  }
+
+  .navbar-logo{
+    width: 30px;
+    margin-left: -1px;
+  }
+
+  .navbar-actions{
+    margin-left: 58px;
+  }
+
+  .navbar-container{
+    width: 109%;
+  }
+  .campaign-container{
+    width: 33%;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .top-container {
+    display: flex; /* Keeps the elements side-by-side */
+    justify-content: space-between; /* Ensures spacing between the elements */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: nowrap; /* Prevents wrapping unless necessary */
+  }
+  
+
+ 
+  
+  
+  .right-container{
+    width: 25%;
+    margin-right: 230px;
     position: relative;
   
   }
@@ -1276,17 +3560,35 @@ line-height: normal;
 
   @media (min-width: 791px) and (max-width: 860px){
  
-    
+  
     .navbar-links{
-      margin-left: 10px;
+      margin-left: 82px;
+      
     }
 
-    
+    .navbar-item{
+      font-size: 13px;
+    }
+
+    .navbar-logo{
+      width: 30px;
+      margin-left: -1px;
+    }
+
+    .navbar-actions{
+      margin-left: 28px;
+    }
+  
+    .navbar-container{
+      width: 95%;
+    }
+  
+
     .navbar-links li.active {
       margin-top: -33px;
       color: #231F20;
       font-weight: normal;
-      margin-bottom: -39px;
+      margin-bottom: -33px;
       border-bottom: 3px solid var(--500-primary, #BF1249);
     }
 
@@ -1308,8 +3610,8 @@ line-height: normal;
     
     
     .right-container{
-      width: 25%;
-      margin-right: 270px;
+      width: 35%;
+      margin-right: 280px;
       position: relative;
     
     }
@@ -1339,11 +3641,13 @@ line-height: normal;
     margin-top: -16px;
     color: #231F20;
     font-family: "Inter";
-    font-size: 11.98px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     }
+
+
     
     .start-campaign-btn{
       margin-top: 20px;
@@ -1662,25 +3966,41 @@ line-height: normal;
 
 
     @media (min-width: 861px) and (max-width: 999px){
- 
-      .navbar-container{
-        width: 95%;
-      }
 
-      .navbar-actions{
-        margin-right: -20px;
+
+      .navbar-links{
+        margin-left: 132px;
+        
       }
+  
+      .navbar-item{
+        font-size: 13px;
+      }
+  
+      .navbar-logo{
+        width: 30px;
+        margin-left: -1px;
+      }
+  
+      .navbar-actions{
+        margin-left: 60px;
+      }
+    
+      .navbar-container{
+        width: 100%;
+      }
+ 
 
       .navbar-links li.active {
         margin-top: -33px;
         color: #231F20;
         font-weight: normal;
-        margin-bottom: -39px;
+        margin-bottom: -31px;
         border-bottom: 3px solid var(--500-primary, #BF1249);
       }
 
       .campaign-container{
-        width: 33%;
+        width: 35%;
         margin-left: 20px;
         position: relative;
         z-index: 1;
@@ -1693,11 +4013,13 @@ line-height: normal;
         flex-wrap: nowrap; /* Prevents wrapping unless necessary */
       }
       
-      
+      .background-image{
+        width: 104%;
+      }
       
       
       .right-container{
-        width: 25%;
+       
         margin-left: -160px;
         position: relative;
       
@@ -2053,20 +4375,33 @@ line-height: normal;
 
 @media (min-width: 1000px) and (max-width: 1099px){
  
- .navbar-container{
-    width: 97%;
- }
-
- .navbar-actions{
-  margin-right: 10px;
- }
- 
+  .navbar-links{
+        margin-left: 142px;
+        
+      }
+  
+      .navbar-item{
+        font-size: 13px;
+      }
+  
+      .navbar-logo{
+        width: 30px;
+        margin-left: 30px;
+      }
+  
+      .navbar-actions{
+        margin-left: 90px;
+      }
+    
+      .navbar-container{
+        width: 95%;
+      }
 
  .navbar-links li.active {
   margin-top: -30px;
   color: #231F20;
   font-weight: normal;
-  margin-bottom: -39px;
+  margin-bottom: -31px;
   border-bottom: 3px solid var(--500-primary, #BF1249);
 }
 
@@ -3931,4 +6266,34 @@ line-height: normal;
   background-color: white;  
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
 }  
+}
+
+@media (max-width: 767px) {  
+
+  .legend{
+    display: none;
+  }
+  .legend-mobile {
+    margin-bottom: 10px; /* Apply only on mobile */
+    display: block;
+    display: flex;
+    justify-content:flex-end;
+    gap: 30px;
+    color: #000;
+    font-family: "Inter";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 100px;
+    margin-top: 20px;
+  }
+  
+
+}
+
+@media (min-width: 768px) {  
+  .legend {
+    margin-bottom: 0; /* Reset margin for tablets and larger screens */
+  }
 }
