@@ -408,7 +408,9 @@ function Dashboard() {
           </tr>  
         </tbody>  
       </table>  
-      <div className='legend-mobile'>
+  
+        </div>
+        <div className='legend-mobile'>
        <div className="legend-item">
               <span className="legend-box lightpink"></span>  &gt;30%
             </div>
@@ -419,7 +421,6 @@ function Dashboard() {
               <span className="legend-box darkpink"></span>  &lt;60%
             </div>
             </div>
-        </div>
         </div>
        
     </div>  
