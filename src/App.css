@@ -1683,7 +1683,7 @@ height: 221px;
 
 
   .navbar-container{
-    width: 433px;
+    width: 327px;
     margin-top: 30px;
     background-color: #fff;
    
@@ -1704,7 +1704,7 @@ height: 221px;
   }
 
   .navbar-actions{
-    margin-left: 150px;
+    margin-left: 60px;
   }
 
   .profile-image{
@@ -1788,7 +1788,7 @@ line-height: normal;
   }
 
   .background-image{
-    width: 480px;
+    width: 360px;
 height: 221px;
   }
 
@@ -1867,7 +1867,7 @@ height: 221px;
 
   .view-settings{
     margin-bottom: -90px;
-    margin-right: 70px;
+    margin-right: 20px;
   }
 
 
@@ -1911,7 +1911,7 @@ height: 221px;
 
 
   .navbar-container{
-    width: 500px;
+    width: 370px;
     margin-top: 30px;
     background-color: #fff;
   }
@@ -1932,7 +1932,7 @@ height: 221px;
   }
 
   .navbar-actions{
-    margin-left: 200px;
+    margin-left: 100px;
   }
 
   .profile-image{
@@ -2003,7 +2003,7 @@ line-height: normal;
   }
 
   .background-image{
-    width: 550px;
+    width: 380px;
 height: 221px;
   }
 
@@ -2073,7 +2073,7 @@ height: 221px;
 
   .view-settings{
     margin-bottom: -90px;
-    margin-right: 150px;
+    margin-right: 50px;
   }
 
   .table-active{
@@ -6608,7 +6608,7 @@ line-height: normal;
     font-style: normal; /* Font style */  
     font-weight: 400; /* Font weight */  
     line-height: normal; /* Line height */  
-    margin-right: 130px; /* Right margin */  
+    margin-right: 70px; /* Right margin */  
     margin-top: 20px; /* Top margin */  
     position:static; /* Keep element fixed in the viewport */  
     bottom: 20px; /* You can adjust the top position as needed */  
