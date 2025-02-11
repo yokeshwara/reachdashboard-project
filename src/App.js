@@ -321,21 +321,21 @@ function Dashboard() {
       <table>  
         <thead className='table-heading'>  
           <tr>  
-            <th>Week</th>  
-            <th>Email Sent</th>  
-            <th>Avg. Rates</th>  
-            <th>Monday</th>  
-            <th>Tuesday</th>  
-            <th>Wednesday</th>  
-            <th>Thursday</th>  
-            <th>Friday</th>  
-            <th>Saturday</th>  
-            <th>Sunday</th>  
+            <th className='fixed-column'>Week</th>  
+            <th className='tableheading scroll'>Email Sent</th>  
+            <th className='tableheading scroll'>Avg. Rates</th>  
+            <th className='tableheading scroll'>Monday</th>  
+            <th className='tableheading scroll'>Tuesday</th>  
+            <th className='tableheading scroll'>Wednesday</th>  
+            <th className='tableheading scroll'>Thursday</th>  
+            <th className='tableheading scroll'>Friday</th>  
+            <th className='tableheading scroll'>Saturday</th>  
+            <th className='tableheading scroll'>Sunday</th>  
           </tr>  
         </thead>  
         <tbody>  
           <tr>  
-            <td className='greycolor'>Jan 1</td>  
+            <td className='greycolor' >Jan 1</td>  
             <td className='greycolor'>125</td>  
             <td className='greycolor'>87,6%</td>  
             <td className="lightpink">78.2%</td>  

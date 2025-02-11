@@ -661,6 +661,8 @@ line-height: normal;
   padding: 15px 0; /* Removed side padding (left & right) */  
   margin: 0 auto; /* Ensure it's centered with no extra margins */  
   background-color: #fff;
+     /* Enable horizontal scrolling */  
+  
 }
 
 .large-text {  
@@ -716,6 +718,18 @@ line-height: normal;
   flex-direction: row;
   position: relative;
   
+}
+
+.fixed-column {  
+  margin-right: 70px; /* Right margin */  
+  margin-top: 20px; /* Top margin */  
+  position:static; /* Keep element fixed in the viewport */  
+  top: 575px; /* You can adjust the top position as needed */   
+  z-index: 1;
+}
+
+.table-container{
+  overflow-x: auto;
 }
 
 
@@ -1093,7 +1107,7 @@ height: 16px;
   
   
   .engagement-container{
-    margin-right: -67px;
+    margin-right: -78px;
     width: 370px;
   }
 
@@ -1168,7 +1182,7 @@ height: 16px;
   
   
   .engagement-container{
-    margin-left: -52px;
+    margin-left: -58px;
     width: 370px;
   }
 
@@ -1453,7 +1467,7 @@ td{
 
 
   .navbar-container{
-    width: 117%;
+    width: 380px;
     margin-top: 30px;
     background-color: #fff;
    
@@ -1745,11 +1759,11 @@ height: 221px;
 
   .campaign-content1{
     margin-top: 20px;
-    width:  344px;
+    width:  354px;
     color: #231F20;
 
 font-family: "Inter";
-font-size: 13px;
+font-size: 12px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
@@ -2003,7 +2017,7 @@ line-height: normal;
   }
 
   .background-image{
-    width: 380px;
+    width: 400px;
 height: 221px;
   }
 
@@ -2403,7 +2417,7 @@ line-height: normal;
   }
 
   .background-image{
-    width: 615px;
+    width: 640px;
 height: 221px;
   }
 
@@ -2477,6 +2491,11 @@ height: 221px;
   }
 
 
+  .legend-mobile{
+    margin-right: -130px;
+  }
+
+
   table{
     margin-top: 50px;
   
@@ -2502,7 +2521,7 @@ height: 221px;
 
 
   .navbar-container{
-    width:110%;
+    width:710px;
     margin-top: 30px;
     background-color: #fff;
   }
@@ -2592,7 +2611,7 @@ line-height: normal;
   }
 
   .background-image{
-    width: 750px;
+    width: 755px;
 height: 221px;
   }
 
@@ -6598,9 +6617,10 @@ line-height: normal;
     display: none;
   }
   .legend-mobile {  
+   
     margin-bottom: 10px; /* Apply only on mobile */  
     display: flex; /* Use display: flex to create a flexible layout */  
-    justify-content: flex-end; /* Align items to the right */  
+    justify-content: center; /* Align items to the right */  
     gap: 30px; /* Space between child elements */  
     color: #000; /* Text color */  
     font-family: "Inter"; /* Font family */  
