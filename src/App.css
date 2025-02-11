@@ -967,8 +967,8 @@ height: 16px;
    
    
   .card{
-    width: 100px;
-    padding: 1px;
+    
+    padding: 5px;
     height: 85px;
   }
   
@@ -1050,7 +1050,7 @@ height: 16px;
    
   .card{
     
-    padding: 1px;
+    padding: 5px;
     height: 85px;
   }
   
@@ -1132,7 +1132,7 @@ height: 16px;
    
   .card{
    
-    padding: 1px;
+    padding: 5px;
     height: 85px;
   }
   
@@ -1220,7 +1220,7 @@ height: 16px;
    
   .card{
  
-    padding: 1px;
+    padding: 5px;
     height: 85px;
   }
   
@@ -1310,7 +1310,7 @@ height: 16px;
    
   .card{
    
-    
+    padding: 3px;
     height: 90px;
   }
   
@@ -1333,7 +1333,7 @@ height: 16px;
 
 
   .card{
-    padding: 1px;
+    padding: 3px;
   }
   
 .header h2{
@@ -1697,6 +1697,7 @@ height: 221px;
 
 
   .navbar-container{
+    overflow-x: hidden;
     width: 327px;
     margin-top: 30px;
     background-color: #fff;
@@ -1807,7 +1808,7 @@ height: 221px;
   }
 
   .container {  
-    width: 93%;  
+    width: 95%;  
     height: 20%;  
     padding: 10px 1px 5px 5px;  
     margin-top: 50px;  
@@ -2218,12 +2219,12 @@ line-height: normal;
   }
 
   .background-image{
-    width: 460px;
+    width: 480px;
 height: 221px;
   }
 
   .container {  
-    width: 103%;  
+    width: 97%;  
     height: 20%;  
     padding: 10px 1px 5px 5px;  
     margin-top: 50px;  
@@ -2251,7 +2252,7 @@ height: 221px;
 
   .engagement-container{
    margin-top: 270px;
-   width: 92%;
+   width: 86%;
    height: 70%;
    margin-left: 20px;
   }
@@ -2263,7 +2264,7 @@ height: 221px;
   } 
 
   .bottom-container{
-    width: 100%;
+    width: 95%;
     margin-bottom: 50px;
      margin-left: -70px;
   }
@@ -2377,7 +2378,7 @@ height: 221px;
     color: #231F20;
 
     font-family: "Inter";
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -2390,11 +2391,11 @@ height: 221px;
 
   .campaign-content1{
     margin-top: 20px;
-    width:  344px;
+    width:  544px;
     color: #231F20;
 
 font-family: "Inter";
-font-size: 13px;
+font-size: 16px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
@@ -2571,7 +2572,7 @@ height: 221px;
     color: #231F20;
 
     font-family: "Inter";
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -2584,11 +2585,11 @@ height: 221px;
 
   .campaign-content1{
     margin-top: 20px;
-    width:  344px;
+    width:  544px;
     color: #231F20;
 
 font-family: "Inter";
-font-size: 13px;
+font-size: 18px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
@@ -2612,7 +2613,7 @@ line-height: normal;
 
   .background-image{
     width: 755px;
-height: 221px;
+    height: 221px;
   }
 
   .container {  
@@ -6643,4 +6644,21 @@ line-height: normal;
   .legend {
     margin-bottom: 0; /* Reset margin for tablets and larger screens */
   }
+}
+
+
+@media (max-width: 649px) {  
+
+
+
+
+.top-container{
+  overflow-x: hidden;
+}
+
+.middle-container{
+  overflow-x: hidden;
+}
+
+
 }
