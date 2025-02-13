@@ -1,4 +1,5 @@
 
+import { color } from 'echarts';
 import './App.css';
 import ReactECharts from 'echarts-for-react';  
 
@@ -89,81 +90,99 @@ function Dashboard() {
 
   const getOption = () => ({  
     title: {  
-       
-      left: '7%',  
-      top: '1%',  
-      textStyle: {  
-        fontSize: '20px',  
-        fontWeight: 'bold'  
-      }  
+        left: '7%',  
+        top: '1%',  
+        textStyle: {  
+            fontSize: '20px',  
+            fontWeight: 'bold'  
+        }  
     },  
     tooltip: {  
-      trigger: 'axis'  
+        trigger: 'axis'  
     },  
     legend: {  
-      data: ['Campaign 1', 'Inbox'],  
-      top: 'top'  
+        data: ['Campaign 1', 'Inbox'],  
+        top: 'top'  
     },  
-    xAxis: {  
-      type: 'category',  
-      boundaryGap: false,  
-      data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],  
-      axisLabel: {  
-        color: '#000'  
-      },  
-      axisLine: {  // Hide x-axis line  
-        show: false  
+    grid: {
+        left: '2%',   // Adjust left margin
+        right: '5%',  // Adjust right margin (increase this if needed)
+        bottom: '20%', 
+        top: '25%',
+        containLabel: true // Ensures labels fit inside
     },
-    axisTick: {  // Hide the ticks on the x-axis  
-      show: false  
-  } 
-      
+    xAxis: {  
+        type: 'category',  
+        boundaryGap: false,  
+        data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],  
+        axisLabel: {  
+            color: '#000',
+            margin: 10, // Adjust vertical spacing if needed
+            padding: [5, -15, 15, -5] // [top, right, bottom, left] - Shift left/right  
+        },  
+        axisLine: {  
+            show: false  
+        },
+        axisTick: {  
+            show: false  
+        },
+        
     },  
     yAxis: {  
-      type: 'value',  
-      axisLabel: {  
-        show: false,  // Hide y-axis labels  
-    }, 
+        type: 'value',  
+        axisLabel: {  
+            show: false  
+        }, 
+        splitNumber: 3, // Ensures only 4 split lines appear  
+        splitLine: {
+            show: true,
+            lineStyle: {
+                color: '#71767A', // Light gray grid lines
+                width: 0.5, // Slightly increase thickness if needed
+                border: '0.5px solid var(--Text-Colour-Caption-Text, #71767A)',
+            }
+        }
     },  
     series: [  
-      {  
-        type: 'line',  
-        data: [1.2, 1.5, 1.3, 1.1, 1.4, 1.5, 1.7, 1.2, 1.3, 1.0, 1.1, 1.0],  
-        smooth: true,  
-        lineStyle: {  
-          color: '#7270F7'  
+        {  
+            type: 'line',  
+            data: [1.2, 1.5, 1.3, 1.1, 1.4, 1.5, 1.7, 1.2, 1.3, 1.0, 1.1, 1.0],  
+            smooth: true,  
+            lineStyle: {  
+                color: '#7270F7'  
+            },  
+            symbol: (value, index) => (index === 2 ? 'circle' : undefined),  
+            symbolSize: 1,  
+            itemStyle: {  
+                normal: {  
+                    borderColor: '#3B82F6',  
+                    borderWidth: 2,  
+                    shadowColor: 'rgba(59,130,246, .5)',  
+                    shadowBlur: 10,  
+                }  
+            }  
         },  
-        symbol: (value, index) => (index === 2 ? 'circle' : undefined), // Only show circle for March (index 2)  
-        symbolSize: 1,  
-        itemStyle: {  
-          normal: {  
-            borderColor: '#3B82F6',  
-            borderWidth: 2,  
-            shadowColor: 'rgba(59,130,246, .5)',  
-            shadowBlur: 10,  
-          }  
+        {  
+            type: 'line',  
+            data: [1.0, 1.1, 1.0, 1.2, 1.3, 1.5, 1.4, 1.6, 1.3, 1.2, 1.0, 1.1],  
+            smooth: true,  
+            lineStyle: {  
+                color: '#D1D5DB'  
+            },  
+            symbol: (value, index) => (index === 2 ? 'circle' : undefined),  
+            symbolSize: 1,  
+            itemStyle: {  
+                normal: {  
+                    borderColor: '#D1D5DB',  
+                    borderWidth: 2,  
+                    shadowColor: '#A9AEB1',  
+                    shadowBlur: 10,  
+                }  
+            }  
         }  
-      },  
-      {  
-        type: 'line',  
-        data: [1.0, 1.1, 1.0, 1.2, 1.3, 1.5, 1.4, 1.6, 1.3, 1.2, 1.0, 1.1],  
-        smooth: true,  
-        lineStyle: {  
-          color: '#D1D5DB'  
-        },  
-        symbol: (value, index) => (index === 2 ? 'circle' : undefined), // Only show circle for March (index 2)  
-        symbolSize: 1,  
-        itemStyle: {  
-          normal: {  
-            borderColor: '#D1D5DB',  
-            borderWidth: 2,  
-            shadowColor: '#A9AEB1',  
-            shadowBlur: 10,  
-          }  
-        }  
-      }  
     ]  
 });
+
 
   return  <div className='background-image'>
    <div className="top-container">
