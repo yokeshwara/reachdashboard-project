@@ -1,5 +1,5 @@
 
-import { color } from 'echarts';
+
 import './App.css';
 import ReactECharts from 'echarts-for-react';  
 
